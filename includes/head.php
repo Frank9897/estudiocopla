@@ -1,0 +1,77 @@
+<?php
+/*
+|--------------------------------------------------------------------------
+| Archivo: head.php
+|--------------------------------------------------------------------------
+| Contiene la configuración principal del documento HTML.
+| Aquí se definen los metadatos, favicon, tipografías y hojas de estilo.
+|--------------------------------------------------------------------------
+*/
+?>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        <?= SITE_NAME ?> | Confort, Planificación y Arquitectura
+    </title>
+
+    <meta
+        name="description"
+        content="Estudio COPLA desarrolla proyectos de arquitectura, planificación y construcción con un enfoque funcional, contemporáneo y personalizado.">
+
+    <meta
+        name="keywords"
+        content="arquitectura, estudio de arquitectura, copla, planificación, construcción, diseño arquitectónico">
+
+    <meta
+        name="author"
+        content="Franco Vasquez">
+
+    <link
+        rel="icon"
+        href="favicon.ico">
+
+    <!-- ==========================
+        Google Fonts
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- ==========================
+         Estilos CSS
+    =========================== -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/reset.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/variables.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/responsive.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/animations.css">
+
+</head>
