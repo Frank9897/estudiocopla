@@ -1,0 +1,15 @@
+{
+    "name": "franco-pc/estudiocopla",
+    "autoload": {
+        "psr-4": {
+            "FrancoPc\\Estudiocopla\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vasquez Franco",
+            "email": "franco.vasquez9897@gmail.com"
+        }
+    ],
+    "require": {}
+}
