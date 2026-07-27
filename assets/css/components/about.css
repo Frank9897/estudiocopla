@@ -1,0 +1,73 @@
+/*
+|--------------------------------------------------------------------------
+| ABOUT COMPONENT
+|--------------------------------------------------------------------------
+*/
+
+.about{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:4rem;
+
+}
+
+.about__subtitle{
+
+    display:inline-block;
+
+    margin-bottom:1rem;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:var(--color-accent);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.about__title{
+
+    margin-bottom:1.5rem;
+
+}
+
+.about__text{
+
+    line-height:1.8;
+
+    color:var(--color-text-light);
+
+}
+
+.about__placeholder{
+
+    min-height:420px;
+
+    border-radius:20px;
+
+    border:2px dashed #d6d6d6;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#888;
+
+    background:#fafafa;
+
+    text-align:center;
+
+    padding:2rem;
+
+}

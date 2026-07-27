@@ -1,0 +1,99 @@
+/*
+|--------------------------------------------------------------------------
+| PROJECTS COMPONENT
+|--------------------------------------------------------------------------
+*/
+
+.projects__header{
+
+    max-width:700px;
+
+    margin:0 auto 4rem;
+
+    text-align:center;
+
+}
+
+.projects__subtitle{
+
+    display:inline-block;
+
+    margin-bottom:1rem;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:var(--color-accent);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.projects__title{
+
+    margin-bottom:1.5rem;
+
+}
+
+.projects__text{
+
+    color:var(--color-text-light);
+
+    line-height:1.8;
+
+}
+
+.projects__grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+.project-card{
+
+    background:#fff;
+
+}
+
+.project-card__image{
+
+    aspect-ratio:4/3;
+
+    border-radius:18px;
+
+    background:#f3f3f3;
+
+    border:2px dashed #d7d7d7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#8d8d8d;
+
+    margin-bottom:1.5rem;
+
+}
+
+.project-card h3{
+
+    margin-bottom:.8rem;
+
+}
+
+.project-card p{
+
+    color:var(--color-text-light);
+
+    line-height:1.7;
+
+}

@@ -1,0 +1,61 @@
+/*
+|--------------------------------------------------------------------------
+| FOOTER COMPONENT
+|--------------------------------------------------------------------------
+*/
+
+.footer{
+
+    background:#111;
+
+    color:#fff;
+
+    padding:4rem 0 2rem;
+
+}
+
+.footer__content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:3rem;
+
+    margin-bottom:2rem;
+
+}
+
+.footer__nav{
+
+    display:flex;
+
+    gap:2rem;
+
+}
+
+.footer__nav a{
+
+    transition:var(--transition);
+
+}
+
+.footer__nav a:hover{
+
+    color:var(--color-accent);
+
+}
+
+.footer__bottom{
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    padding-top:2rem;
+
+    text-align:center;
+
+    color:#bbb;
+
+}

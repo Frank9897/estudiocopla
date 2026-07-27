@@ -1,0 +1,93 @@
+/*
+|--------------------------------------------------------------------------
+| HERO COMPONENT
+|--------------------------------------------------------------------------
+*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    padding-top:90px;
+
+    background:linear-gradient(
+        180deg,
+        #f8f8f8 0%,
+        #ffffff 100%
+    );
+
+}
+
+.hero .container{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    align-items:center;
+
+    gap:var(--spacing-lg);
+
+}
+
+.hero__content{
+
+    max-width:760px;
+
+}
+
+.hero__subtitle{
+
+    display:inline-block;
+
+    margin-bottom:var(--spacing-sm);
+
+    font-size:.9rem;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:var(--color-accent);
+
+    font-weight:600;
+
+}
+
+.hero__title{
+
+    margin-bottom:var(--spacing-md);
+
+    font-size:clamp(3rem,7vw,5.5rem);
+
+    line-height:1.05;
+
+}
+
+.hero__text{
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    color:var(--color-text-light);
+
+    margin-bottom:var(--spacing-lg);
+
+}
+
+.hero__actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+}
