@@ -1,4 +1,4 @@
-<section id="proyectos" class="section">
+<section id="proyectos" class="projects section">
 
     <div class="container">
 

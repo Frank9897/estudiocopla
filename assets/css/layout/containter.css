@@ -1,15 +1,21 @@
 /*
 |--------------------------------------------------------------------------
-| CONTAINER
-|--------------------------------------------------------------------------
-| Contenedor principal del sitio.
+| CONTAINERS
 |--------------------------------------------------------------------------
 */
 
 .container{
 
-    width:min(100% - 48px, var(--container-width));
+    width:min(92%,1280px);
 
-    margin-inline:auto;
+    margin:0 auto;
+
+}
+
+.container-wide{
+
+    width:min(94%,1440px);
+
+    margin:0 auto;
 
 }

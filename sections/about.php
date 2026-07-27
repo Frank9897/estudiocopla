@@ -1,34 +1,30 @@
-<section id="nosotros" class="section">
+<section id="nosotros" class="about section">
 
     <div class="container">
 
-        <div class="about">
+        <div class="section-header">
 
-            <div class="about__content">
+            <span class="section-subtitle">
+                SOBRE COPLA
+            </span>
 
-                <span class="about__subtitle">
-                    SOBRE COPLA
-                </span>
+            <h2 class="section-title">
+                Arquitectura pensada para perdurar.
+            </h2>
 
-                <h2 class="about__title">
-                    Comprometidos con cada proyecto desde la planificación hasta la ejecución.
-                </h2>
+            <p class="section-description">
 
-                <p class="about__text">
-                    En COPLA creemos que cada proyecto representa una oportunidad para crear espacios funcionales, estéticos y duraderos. Nuestro objetivo es brindar soluciones arquitectónicas adaptadas a las necesidades de cada cliente, acompañando cada etapa del proceso con profesionalismo y compromiso.
-                </p>
+                En COPLA creemos que cada proyecto comienza escuchando a las personas. Diseñamos espacios que equilibran funcionalidad, estética y eficiencia, acompañando cada etapa con compromiso, planificación y atención al detalle.
 
-            </div>
+            </p>
 
-            <div class="about__image">
+        </div>
 
-                <div class="about__placeholder">
+        <div class="about__image">
 
-                    Próximamente imagen del estudio
-
-                </div>
-
-            </div>
+            <img
+                src="assets/img/about.jpg"
+                alt="Proyecto arquitectónico de COPLA">
 
         </div>
 

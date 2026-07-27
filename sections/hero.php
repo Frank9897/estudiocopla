@@ -1,4 +1,4 @@
-<section id="inicio" class="hero">
+<section id="inicio" class="hero section-lg">
 
     <div class="hero__overlay"></div>
 

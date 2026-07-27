@@ -92,3 +92,56 @@
     min-height:180px;
 
 }
+.contact__wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:5rem;
+
+    align-items:start;
+
+}
+
+.contact__map{
+
+    margin-top:5rem;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+}
+
+.contact__map iframe{
+
+    width:100%;
+
+    height:450px;
+
+    border:0;
+
+    display:block;
+
+}
+
+@media (max-width:992px){
+
+    .contact__wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:3rem;
+
+    }
+
+    .contact__map iframe{
+
+        height:350px;
+
+    }
+
+}

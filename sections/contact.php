@@ -1,8 +1,8 @@
-<section id="contacto" class="section">
+<section id="contacto" class="contact section">
 
     <div class="container">
 
-        <div class="contact">
+        <div class="contact__wrapper">
 
             <div class="contact__info">
 
@@ -20,11 +20,17 @@
 
                 <ul class="contact__list">
 
-                    <li><strong>Teléfono:</strong> +54 381 XXX-XXXX</li>
+                    <li>
+                        <strong>Teléfono:</strong> +54 381 XXX-XXXX
+                    </li>
 
-                    <li><strong>Email:</strong> contacto@copla.com.ar</li>
+                    <li>
+                        <strong>Email:</strong> contacto@copla.com.ar
+                    </li>
 
-                    <li><strong>Ubicación:</strong> San Miguel de Tucumán, Argentina</li>
+                    <li>
+                        <strong>Ubicación:</strong> San Miguel de Tucumán, Argentina
+                    </li>
 
                 </ul>
 
@@ -62,14 +68,28 @@
                     ></textarea>
 
                     <button
-                        class="button button--primary"
-                        type="submit">
+                        type="submit"
+                        class="button button--primary">
+
                         Enviar consulta
+
                     </button>
 
                 </form>
 
             </div>
+
+        </div>
+
+        <div class="contact__map">
+
+            <iframe
+                title="Ubicación de Estudio COPLA"
+                src="https://www.google.com/maps/embed?pb=..."
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
 
         </div>
 

@@ -38,7 +38,6 @@ require_once 'config/config.php';
 
         <?php require_once 'sections/contact.php'; ?>
 
-        <?php require_once 'sections/map.php'; ?>
 
     </main>
 

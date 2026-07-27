@@ -1,4 +1,4 @@
-<section id="metodologia" class="section">
+<section id="metodologia" class="methodology section">
 
     <div class="container">
 
