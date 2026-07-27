@@ -4,17 +4,17 @@
 
         <div class="services">
 
-            <div class="services__header">
+            <div class="section-header">
 
-                <span class="services__subtitle">
+                <span class="section-subtitle">
                     SERVICIOS
                 </span>
 
-                <h2 class="services__title">
+                <h2 class="section-title">
                     Soluciones arquitectónicas para cada necesidad.
                 </h2>
 
-                <p class="services__text">
+                <p class="section-description">
                     Acompañamos a nuestros clientes en todas las etapas del proyecto, ofreciendo soluciones personalizadas con un enfoque integral.
                 </p>
 

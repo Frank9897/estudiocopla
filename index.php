@@ -45,7 +45,7 @@ require_once 'config/config.php';
     <?php require_once 'includes/footer.php'; ?>
 
     <?php require_once 'includes/scripts.php'; ?>
-
+    
 </body>
 
 </html>

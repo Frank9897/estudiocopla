@@ -6,39 +6,64 @@
 
 .hero{
 
+    position:relative;
+
     min-height:100vh;
 
     display:flex;
 
     align-items:center;
 
-    position:relative;
+    justify-content:center;
 
-    padding-top:90px;
+    overflow:hidden;
+
+    background-image:url("../img/hero.jpg");
+
+    background-position:center;
+
+    background-size:cover;
+
+    background-repeat:no-repeat;
+
+}
+
+.hero__overlay{
+
+    position:absolute;
+
+    inset:0;
 
     background:linear-gradient(
-        180deg,
-        #f8f8f8 0%,
-        #ffffff 100%
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.35)
     );
 
 }
 
 .hero .container{
 
-    display:grid;
+    position:relative;
 
-    grid-template-columns:1fr;
+    z-index:2;
+
+    display:flex;
+
+    justify-content:center;
 
     align-items:center;
 
-    gap:var(--spacing-lg);
+    min-height:100vh;
 
 }
 
 .hero__content{
 
-    max-width:760px;
+    max-width:850px;
+
+    text-align:center;
+
+    animation:heroFade 1.1s ease;
 
 }
 
@@ -46,39 +71,47 @@
 
     display:inline-block;
 
-    margin-bottom:var(--spacing-sm);
+    margin-bottom:var(--space-4);
 
-    font-size:.9rem;
-
-    letter-spacing:4px;
+    letter-spacing:5px;
 
     text-transform:uppercase;
 
-    color:var(--color-accent);
+    font-size:.85rem;
 
     font-weight:600;
+
+    color:#d8c49b;
 
 }
 
 .hero__title{
 
-    margin-bottom:var(--spacing-md);
+    color:#ffffff;
 
-    font-size:clamp(3rem,7vw,5.5rem);
+    font-size:clamp(3rem,6vw,5.8rem);
 
     line-height:1.05;
+
+    margin-bottom:var(--space-5);
+
+    text-shadow:0 10px 30px rgba(0,0,0,.45);
 
 }
 
 .hero__text{
 
+    max-width:720px;
+
+    margin:0 auto;
+
+    color:rgba(255,255,255,.92);
+
     font-size:1.15rem;
 
-    line-height:1.8;
+    line-height:1.9;
 
-    color:var(--color-text-light);
-
-    margin-bottom:var(--spacing-lg);
+    text-shadow:0 3px 12px rgba(0,0,0,.35);
 
 }
 
@@ -86,8 +119,32 @@
 
     display:flex;
 
+    justify-content:center;
+
+    gap:var(--space-4);
+
     flex-wrap:wrap;
 
-    gap:1rem;
+    margin-top:var(--space-6);
+
+}
+
+@keyframes heroFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }

@@ -1,4 +1,6 @@
-<section class="hero">
+<section id="inicio" class="hero">
+
+    <div class="hero__overlay"></div>
 
     <div class="container">
 
@@ -9,11 +11,11 @@
             </span>
 
             <h1 class="hero__title">
-                Diseñamos espacios que combinan funcionalidad, identidad y calidad.
+                Diseñamos espacios que inspiran una nueva forma de vivir.
             </h1>
 
             <p class="hero__text">
-                En COPLA desarrollamos proyectos arquitectónicos pensados para acompañar el crecimiento de nuestros clientes, cuidando cada detalle desde la planificación hasta la ejecución.
+                En COPLA transformamos ideas en proyectos arquitectónicos funcionales, modernos y atemporales, acompañando cada etapa desde el concepto hasta la ejecución.
             </p>
 
             <div class="hero__actions">

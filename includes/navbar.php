@@ -3,8 +3,7 @@
 |--------------------------------------------------------------------------
 | Archivo: navbar.php
 |--------------------------------------------------------------------------
-| Barra de navegación principal del sitio.
-| Contiene el logotipo, enlaces de navegación y el botón de contacto.
+| Barra de navegación principal.
 |--------------------------------------------------------------------------
 */
 ?>
@@ -13,11 +12,9 @@
 
     <nav class="navbar">
 
-        <div class="container">
+        <div class="container navbar__container">
 
-            <a
-                href="#hero"
-                class="navbar__logo">
+            <a href="#inicio" class="navbar__logo">
 
                 <?= SITE_NAME ?>
 
@@ -26,28 +23,36 @@
             <ul class="navbar__menu">
 
                 <li>
-                    <a href="#about">Nosotros</a>
+                    <a class="navbar__link" href="#nosotros">
+                        Nosotros
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#services">Servicios</a>
+                    <a class="navbar__link" href="#servicios">
+                        Servicios
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#projects">Proyectos</a>
+                    <a class="navbar__link" href="#proyectos">
+                        Proyectos
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#contact">Contacto</a>
+                    <a class="navbar__link" href="#contacto">
+                        Contacto
+                    </a>
                 </li>
 
             </ul>
 
             <a
-                href="#contact"
+                href="#contacto"
                 class="navbar__button">
 
-                Solicitar presupuesto
+                Presupuesto
 
             </a>
 
