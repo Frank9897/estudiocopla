@@ -11,5 +11,7 @@
             "email": "franco.vasquez9897@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "phpmailer/phpmailer": "^7.1"
+    }
 }

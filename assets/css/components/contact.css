@@ -3,19 +3,11 @@
 | CONTACT COMPONENT
 |--------------------------------------------------------------------------
 */
-
 .contact{
 
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:4rem;
-
-    align-items:start;
+    background:var(--color-background);
 
 }
-
 .contact__subtitle{
 
     display:inline-block;

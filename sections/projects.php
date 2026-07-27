@@ -1,3 +1,8 @@
+<?php
+
+$projects = require __DIR__ . '/../config/projects.php';
+
+?>
 <section id="proyectos" class="projects section">
 
     <div class="container">
@@ -20,45 +25,47 @@
 
             </div>
 
-            <div class="projects__grid">
+        <div class="projects__grid">
 
-                <article class="project-card">
+            <?php foreach ($projects as $project): ?>
 
-                    <div class="project-card__image">
-                        Imagen del proyecto
+                <article class="project">
+
+                    <img
+                        class="project__image"
+                        src="assets/img/projects/<?= $project['cover']; ?>"
+                        alt="<?= htmlspecialchars($project['title']); ?>"
+                    >
+
+                    <div class="project__content">
+
+                        <span class="project__category">
+
+                            <?= htmlspecialchars($project['category']); ?>
+
+                        </span>
+
+                        <h3 class="project__title">
+
+                            <?= htmlspecialchars($project['title']); ?>
+
+                        </h3>
+
+                        <a
+                            href="#"
+                            class="project__link">
+
+                            Ver proyecto
+
+                        </a>
+
                     </div>
-
-                    <h3>Proyecto 01</h3>
-
-                    <p>Descripción breve del proyecto.</p>
 
                 </article>
 
-                <article class="project-card">
+            <?php endforeach; ?>
 
-                    <div class="project-card__image">
-                        Imagen del proyecto
-                    </div>
-
-                    <h3>Proyecto 02</h3>
-
-                    <p>Descripción breve del proyecto.</p>
-
-                </article>
-
-                <article class="project-card">
-
-                    <div class="project-card__image">
-                        Imagen del proyecto
-                    </div>
-
-                    <h3>Proyecto 03</h3>
-
-                    <p>Descripción breve del proyecto.</p>
-
-                </article>
-
-            </div>
+        </div>
 
         </div>
 
