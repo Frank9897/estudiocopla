@@ -1,10 +1,10 @@
-<section id="servicios" class="services section">
+<section id="servicios" class="services section section-soft">
 
     <div class="container">
 
         <div class="services">
 
-            <div class="section-header">
+            <div class="section-header" data-reveal="fade">
 
                 <span class="section-subtitle">
                     SERVICIOS
@@ -15,49 +15,73 @@
                 </h2>
 
                 <p class="section-description">
-                    Acompañamos a nuestros clientes en todas las etapas del proyecto, ofreciendo soluciones personalizadas con un enfoque integral.
+                    Proyectos arquitectónicos, dirección técnica, diseño interior, mobiliario a medida, topografía y construcción llave en mano.
                 </p>
 
             </div>
 
             <div class="services__grid">
 
-                <article class="service-card">
+                <article class="service-card" data-reveal="scale" data-reveal-delay="1">
+
+                    <span class="service-card__number">01</span>
+
+                    <span class="service-card__icon">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </span>
 
                     <h3>Proyectos Arquitectónicos</h3>
 
                     <p>
-                        Diseño y planificación de proyectos adaptados a cada cliente.
+                        Diseño funcional y estético, adaptado a cada terreno, cliente y forma de habitar.
                     </p>
 
                 </article>
 
-                <article class="service-card">
+                <article class="service-card" data-reveal="scale" data-reveal-delay="2">
 
-                    <h3>Dirección de Obra</h3>
+                    <span class="service-card__number">02</span>
+
+                    <span class="service-card__icon">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </span>
+
+                    <h3>Dirección Técnica</h3>
 
                     <p>
-                        Seguimiento y coordinación para garantizar la correcta ejecución.
+                        Seguimiento y coordinación de obra para garantizar la correcta ejecución del proyecto.
                     </p>
 
                 </article>
 
-                <article class="service-card">
+                <article class="service-card" data-reveal="scale" data-reveal-delay="3">
 
-                    <h3>Remodelaciones</h3>
+                    <span class="service-card__number">03</span>
+
+                    <span class="service-card__icon">
+                        <i class="fa-solid fa-couch"></i>
+                    </span>
+
+                    <h3>Diseño Interior y Mobiliario</h3>
 
                     <p>
-                        Transformación y optimización de espacios existentes.
+                        Interiorismo y mobiliario a medida que resuelven cada espacio con calidez y funcionalidad.
                     </p>
 
                 </article>
 
-                <article class="service-card">
+                <article class="service-card" data-reveal="scale" data-reveal-delay="4">
 
-                    <h3>Asesoramiento Técnico</h3>
+                    <span class="service-card__number">04</span>
+
+                    <span class="service-card__icon">
+                        <i class="fa-solid fa-key"></i>
+                    </span>
+
+                    <h3>Gestión Integral Llave en Mano</h3>
 
                     <p>
-                        Acompañamiento profesional para la toma de decisiones en cada etapa.
+                        Diseñamos, gestionamos y construimos: un único equipo, un único responsable.
                     </p>
 
                 </article>

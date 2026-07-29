@@ -1,0 +1,210 @@
+/*
+|--------------------------------------------------------------------------
+| RESPONSIVE
+|--------------------------------------------------------------------------
+| Ajustes responsivos globales. Los ajustes específicos de un componente
+| viven en su propio archivo (ver assets/css/components/*.css) cuando
+| son puntuales; acá se centralizan los breakpoints estructurales.
+|--------------------------------------------------------------------------
+*/
+
+/* ============ Tablets grandes / laptops chicas ============ */
+
+@media (max-width:1200px){
+
+    .about__stats{
+
+        gap:1.5rem;
+
+    }
+
+    .methodology__grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* ============ Tablets ============ */
+
+@media (max-width:992px){
+
+    :root{
+
+        --section-spacing:80px;
+
+    }
+
+    .section{ padding:5rem 0; }
+    .section-lg{ padding:6rem 0; }
+    .section-sm{ padding:3.5rem 0; }
+
+    .services__grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about__content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .navbar__menu{
+
+        position:fixed;
+        inset:0 0 0 auto;
+        width:min(78%,340px);
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:center;
+        gap:2rem;
+        padding:0 2.5rem;
+        background:var(--color-primary);
+        transform:translateX(100%);
+        transition:transform .5s var(--ease-premium);
+        z-index:1001;
+
+    }
+
+    .navbar__menu.is-open{
+
+        transform:translateX(0);
+
+    }
+
+    .navbar__link{
+
+        color:#fff !important;
+        font-size:1.3rem;
+
+    }
+
+    .navbar__toggle{
+
+        display:flex;
+
+    }
+
+    .navbar__button{
+
+        display:none;
+
+    }
+
+    .navbar__overlay{
+
+        display:none;
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,.45);
+        backdrop-filter:blur(2px);
+        z-index:1000;
+
+    }
+
+    .navbar__overlay.is-open{
+
+        display:block;
+
+    }
+
+}
+
+/* ============ Mobile ============ */
+
+@media (max-width:768px){
+
+    .hero__actions{
+
+        flex-direction:column;
+        width:100%;
+
+    }
+
+    .hero__actions .button{
+
+        width:100%;
+
+    }
+
+    .methodology__grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .step-card:not(:last-child)::after{
+
+        display:none;
+
+    }
+
+    .contact__wrapper{
+
+        grid-template-columns:1fr;
+        gap:3rem;
+
+    }
+
+    .footer__contacts{
+
+        flex-direction:column;
+        gap:1.2rem;
+
+    }
+
+    .about__stats{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .project-hero__title{
+
+        font-size:clamp(2.4rem,10vw,4rem);
+
+    }
+
+    .project-services__grid,
+    .project-gallery__grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ============ Mobile chico ============ */
+
+@media (max-width:480px){
+
+    .navbar__container{
+
+        height:76px;
+
+    }
+
+    .navbar.scrolled .navbar__container{
+
+        height:64px;
+
+    }
+
+    .hero__title{
+
+        font-size:clamp(2.2rem,9vw,3.2rem);
+
+    }
+
+    .about__stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

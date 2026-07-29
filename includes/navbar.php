@@ -76,8 +76,22 @@ $is_project_page = basename($_SERVER['PHP_SELF']) === 'project.php';
 
             </a>
 
+            <button
+                type="button"
+                class="navbar__toggle"
+                aria-label="Abrir menú"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
         </div>
 
     </nav>
+
+    <div class="navbar__overlay"></div>
 
 </header>

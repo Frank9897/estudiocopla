@@ -4,11 +4,11 @@
 
     <div class="container">
 
-        <h2>
+        <h2 data-reveal="fade">
             La propuesta
         </h2>
 
-        <p>
+        <p data-reveal="fade">
 
             <?= nl2br(htmlspecialchars($project['description'])) ?>
 

@@ -15,7 +15,7 @@ $related = array_slice(array_values($related), 0, 3);
 
     <div class="container">
 
-        <div class="section-header">
+        <div class="section-header" data-reveal="fade">
 
             <span class="section-header__subtitle">
                 CONTINUÁ EXPLORANDO
@@ -29,36 +29,42 @@ $related = array_slice(array_values($related), 0, 3);
 
         <div class="projects__grid">
 
-            <?php foreach ($related as $item): ?>
+            <?php foreach ($related as $i => $item): ?>
 
-                <article class="project">
+                <a
+                    href="<?= BASE_URL ?>/pages/project.php?slug=<?= urlencode($item['slug']) ?>"
+                    class="project-card"
+                    data-media
+                    data-reveal="scale"
+                    data-reveal-delay="<?= $i + 1 ?>">
 
                     <img
-                        class="project__image"
+                        class="project-card__image"
                         src="<?= BASE_URL ?>/assets/img/projects/<?= htmlspecialchars($item['hero']) ?>"
-                        alt="<?= htmlspecialchars($item['title']) ?>">
+                        alt="<?= htmlspecialchars($item['title']) ?>"
+                        data-fallback>
 
-                    <div class="project__content">
+                    <div class="project-card__overlay">
 
-                        <span class="project__category">
+                        <span class="project-card__category">
                             <?= htmlspecialchars($item['category']) ?>
                         </span>
 
-                        <h3 class="project__title">
-                            <?= htmlspecialchars($item['title']) ?>
-                        </h3>
+                        <div class="project-card__footer">
 
-                        <a
-                            href="<?= BASE_URL ?>/pages/project.php?slug=<?= urlencode($item['slug']) ?>"
-                            class="project__link">
+                            <h3 class="project-card__title">
+                                <?= htmlspecialchars($item['title']) ?>
+                            </h3>
 
-                            Ver proyecto
+                            <span class="project-card__arrow">
+                                →
+                            </span>
 
-                        </a>
+                        </div>
 
                     </div>
 
-                </article>
+                </a>
 
             <?php endforeach; ?>
 
@@ -68,7 +74,7 @@ $related = array_slice(array_values($related), 0, 3);
 
             <a
                 href="<?= BASE_URL ?>/#proyectos"
-                class="btn btn--primary">
+                class="button button--primary">
 
                 Ver todos los proyectos
 

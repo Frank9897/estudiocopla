@@ -82,3 +82,29 @@ ol{
     list-style:none;
 
 }
+
+:focus-visible{
+
+    outline:2px solid var(--color-accent);
+    outline-offset:3px;
+
+}
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--color-background-soft);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--color-accent);
+    border-radius:10px;
+
+}

@@ -34,4 +34,9 @@
 
     </div>
 
+    <a href="#nosotros" class="hero__scroll-indicator" aria-label="Bajar a la siguiente sección">
+        Scroll
+        <span></span>
+    </a>
+
 </section>

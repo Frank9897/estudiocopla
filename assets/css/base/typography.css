@@ -23,13 +23,22 @@ h4,
 h5,
 h6{
 
-    font-family: "Oswald", sans-serif;
+    font-family: var(--font-heading);
 
     font-weight: 500;
 
     line-height: 1.1;
 
     letter-spacing: 1px;
+
+    color: var(--color-primary);
+
+}
+
+.text-accent-word{
+
+    color: var(--color-accent);
+    font-style: italic;
 
 }
 

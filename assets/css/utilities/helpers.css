@@ -1,0 +1,55 @@
+/*
+|--------------------------------------------------------------------------
+| HELPERS
+|--------------------------------------------------------------------------
+*/
+
+.text-center{ text-align:center; }
+.text-left{ text-align:left; }
+.text-right{ text-align:right; }
+
+.text-accent{ color:var(--color-accent); }
+.text-light{ color:var(--color-text-light); }
+.text-white{ color:#ffffff; }
+
+.flex{ display:flex; }
+.flex-center{ display:flex; align-items:center; justify-content:center; }
+.flex-between{ display:flex; align-items:center; justify-content:space-between; }
+.flex-wrap{ flex-wrap:wrap; }
+
+.relative{ position:relative; }
+
+.visually-hidden{
+
+    position:absolute !important;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+
+}
+
+.overlay-dark{
+
+    position:absolute;
+    inset:0;
+    background:var(--gradient-overlay);
+
+}
+
+.no-scroll{
+
+    overflow:hidden;
+
+}
+
+::selection{
+
+    background:var(--color-accent);
+    color:#111111;
+
+}

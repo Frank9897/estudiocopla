@@ -23,3 +23,16 @@
     padding:5rem 0;
 
 }
+
+.section-dark{
+
+    background:var(--gradient-dark);
+    color:#ffffff;
+
+}
+
+.section-soft{
+
+    background:var(--color-background-soft);
+
+}

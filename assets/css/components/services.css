@@ -4,49 +4,130 @@
 |--------------------------------------------------------------------------
 */
 
-
 .services__grid{
 
     display:grid;
-
     grid-template-columns:repeat(2,1fr);
-
     gap:var(--space-5);
 
 }
 
 .service-card{
 
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1.1rem;
     padding:var(--space-5);
-
-    border:1px solid #ececec;
-
-    border-radius:18px;
-
-    transition:var(--transition);
-
-    background:#fff;
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-md);
+    background:#ffffff;
+    overflow:hidden;
+    transition:transform .5s var(--ease-premium), box-shadow .5s var(--ease-premium), border-color .5s;
 
 }
 
-.service-card:hover{
+.service-card::before{
 
-    transform:translateY(-6px);
+    content:"";
+    position:absolute;
+    inset:0;
+    background:var(--gradient-dark);
+    opacity:0;
+    transition:opacity .5s var(--ease-premium);
+    z-index:0;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.service-card > *{
+
+    position:relative;
+    z-index:1;
+
+}
+
+.service-card__icon{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    background:var(--color-background-soft);
+    color:var(--color-accent-dark);
+    font-size:1.3rem;
+    transition:.5s var(--ease-premium);
+
+}
+
+.service-card__number{
+
+    position:absolute;
+    top:1.6rem;
+    right:1.8rem;
+    font-family:var(--font-heading);
+    font-size:.85rem;
+    letter-spacing:2px;
+    color:var(--color-border);
+    z-index:1;
+    transition:color .5s;
 
 }
 
 .service-card h3{
 
-    margin-bottom:var(--space-3);
+    font-size:1.35rem;
+    transition:color .5s;
 
 }
 
 .service-card p{
 
     color:var(--color-text-light);
-
     line-height:1.7;
+    transition:color .5s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+    border-color:transparent;
+    box-shadow:var(--shadow-xl);
+
+}
+
+.service-card:hover::before{
+
+    opacity:1;
+
+}
+
+.service-card:hover h3,
+.service-card:hover p{
+
+    color:#ffffff;
+
+}
+
+.service-card:hover p{
+
+    color:rgba(255,255,255,.75);
+
+}
+
+.service-card:hover .service-card__number{
+
+    color:rgba(255,255,255,.25);
+
+}
+
+.service-card:hover .service-card__icon{
+
+    background:var(--color-accent);
+    color:#111111;
+    transform:rotate(-8deg) scale(1.05);
 
 }

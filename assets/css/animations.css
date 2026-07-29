@@ -1,0 +1,211 @@
+/*
+|--------------------------------------------------------------------------
+| ANIMATIONS
+|--------------------------------------------------------------------------
+| Animaciones globales del sitio: entrada de secciones, hover effects,
+| micro-interacciones y keyframes reutilizables.
+|--------------------------------------------------------------------------
+*/
+
+/* ============ Scroll reveal engine ============ */
+/* Controlado por assets/js/main.js (IntersectionObserver).
+   Agrega la clase .is-visible cuando el elemento entra en viewport. */
+
+[data-reveal]{
+
+    opacity:0;
+    transform:translateY(36px);
+    transition:
+        opacity 1s var(--ease-premium),
+        transform 1s var(--ease-premium);
+    will-change:opacity,transform;
+
+}
+
+[data-reveal].is-visible{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+[data-reveal="fade"]{
+
+    transform:none;
+
+}
+
+[data-reveal="left"]{
+
+    transform:translateX(-50px);
+
+}
+
+[data-reveal="left"].is-visible{
+
+    transform:translateX(0);
+
+}
+
+[data-reveal="right"]{
+
+    transform:translateX(50px);
+
+}
+
+[data-reveal="right"].is-visible{
+
+    transform:translateX(0);
+
+}
+
+[data-reveal="scale"]{
+
+    transform:scale(.92);
+
+}
+
+[data-reveal="scale"].is-visible{
+
+    transform:scale(1);
+
+}
+
+/* Delay escalonado para grillas (cards, pasos, proyectos) */
+
+[data-reveal-delay="1"]{ transition-delay:.1s; }
+[data-reveal-delay="2"]{ transition-delay:.2s; }
+[data-reveal-delay="3"]{ transition-delay:.3s; }
+[data-reveal-delay="4"]{ transition-delay:.4s; }
+[data-reveal-delay="5"]{ transition-delay:.5s; }
+[data-reveal-delay="6"]{ transition-delay:.6s; }
+[data-reveal-delay="7"]{ transition-delay:.7s; }
+
+@media (prefers-reduced-motion:reduce){
+
+    [data-reveal]{
+
+        opacity:1 !important;
+        transform:none !important;
+        transition:none !important;
+
+    }
+
+}
+
+/* ============ Keyframes ============ */
+
+@keyframes heroFade{
+
+    from{ opacity:0; transform:translateY(30px); }
+    to{ opacity:1; transform:translateY(0); }
+
+}
+
+@keyframes aboutFade{
+
+    from{ opacity:0; transform:translateY(30px); }
+    to{ opacity:1; transform:translateY(0); }
+
+}
+
+@keyframes float{
+
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-14px); }
+
+}
+
+@keyframes floatSlow{
+
+    0%,100%{ transform:translateY(0) rotate(0deg); }
+    50%{ transform:translateY(-10px) rotate(1.5deg); }
+
+}
+
+@keyframes pulseGlow{
+
+    0%,100%{ box-shadow:0 0 0 0 rgba(var(--color-accent-rgb),.35); }
+    50%{ box-shadow:0 0 0 14px rgba(var(--color-accent-rgb),0); }
+
+}
+
+@keyframes shimmer{
+
+    0%{ background-position:-200% 0; }
+    100%{ background-position:200% 0; }
+
+}
+
+@keyframes lineGrow{
+
+    from{ transform:scaleX(0); }
+    to{ transform:scaleX(1); }
+
+}
+
+@keyframes scrollDot{
+
+    0%{ transform:translateY(0); opacity:1; }
+    70%{ opacity:.4; }
+    100%{ transform:translateY(18px); opacity:0; }
+
+}
+
+@keyframes spinSlow{
+
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+
+}
+
+@keyframes fadeInUp{
+
+    from{ opacity:0; transform:translateY(24px); }
+    to{ opacity:1; transform:translateY(0); }
+
+}
+
+/* ============ Micro interacciones ============ */
+
+.is-floating{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+.is-spinning-slow{
+
+    animation:spinSlow 18s linear infinite;
+
+}
+
+/* Subrayado animado reutilizable */
+
+.link-underline{
+
+    position:relative;
+
+}
+
+.link-underline::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:100%;
+    height:2px;
+    background:var(--color-accent);
+    transform:scaleX(0);
+    transform-origin:right;
+    transition:transform .45s var(--ease-premium);
+
+}
+
+.link-underline:hover::after{
+
+    transform:scaleX(1);
+    transform-origin:left;
+
+}

@@ -10,7 +10,7 @@ $projects = require __DIR__ . '/../config/projects.php';
 
         <div class="projects">
 
-            <div class="projects__header">
+            <div class="projects__header" data-reveal="fade">
 
                 <span class="projects__subtitle">
                     PROYECTOS
@@ -28,16 +28,20 @@ $projects = require __DIR__ . '/../config/projects.php';
 
             <div class="projects__grid">
 
-                <?php foreach ($projects as $project): ?>
+                <?php foreach ($projects as $i => $project): ?>
 
                     <a
                         href="<?= BASE_URL ?>/pages/project.php?slug=<?= urlencode($project['slug']) ?>"
-                        class="project-card">
+                        class="project-card"
+                        data-media
+                        data-reveal="scale"
+                        data-reveal-delay="<?= ($i % 3) + 1 ?>">
 
                         <img
                             class="project-card__image"
                             src="<?= BASE_URL ?>/assets/img/projects/<?= htmlspecialchars($project['hero']) ?>"
-                            alt="<?= htmlspecialchars($project['title']) ?>">
+                            alt="<?= htmlspecialchars($project['title']) ?>"
+                            data-fallback>
 
                         <div class="project-card__overlay">
 

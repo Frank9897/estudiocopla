@@ -2,7 +2,7 @@
 
     <div class="container">
 
-        <div class="section-header">
+        <div class="section-header" data-reveal="fade">
 
             <span class="section-subtitle">
                 Contacto
@@ -20,31 +20,31 @@
 
         <div class="contact__wrapper">
 
-            <div class="contact__info">
+            <div class="contact__info" data-reveal="left">
 
                 <ul class="contact__list">
 
                     <li>
-                        <strong>Teléfono:</strong>
+                        <strong>Teléfono</strong>
                         <a href="tel:+543884480633">
                             +54 388 4480633
                         </a>
                     </li>
 
                     <li>
-                        <strong>Email:</strong>
+                        <strong>Email</strong>
                         <a href="mailto:coplajujuy@gmail.com">
                             coplajujuy@gmail.com
                         </a>
                     </li>
 
                     <li>
-                        <strong>Ubicación:</strong>
+                        <strong>Ubicación</strong>
                         San Salvador de Jujuy, Argentina
                     </li>
 
                     <li>
-                        <strong>Instagram:</strong>
+                        <strong>Instagram</strong>
                         <a href="https://www.instagram.com/estudio.copla"
                            target="_blank"
                            rel="noopener noreferrer">
@@ -56,7 +56,7 @@
 
             </div>
 
-            <div class="contact__form">
+            <div class="contact__form" data-reveal="right">
 
                 <form id="contactForm">
 
@@ -90,7 +90,7 @@
 
         </div>
 
-        <div class="contact__map">
+        <div class="contact__map" data-reveal="fade">
 
             <iframe
                 title="Ubicación de Estudio COPLA"

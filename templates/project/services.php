@@ -2,7 +2,7 @@
 
     <div class="container">
 
-        <div class="section-header">
+        <div class="section-header" data-reveal="fade">
 
             <span class="section-header__subtitle">
                 SERVICIOS
@@ -16,9 +16,9 @@
 
         <div class="project-services__grid">
 
-            <?php foreach ($project['services'] as $service): ?>
+            <?php foreach ($project['services'] as $i => $service): ?>
 
-                <article class="project-service">
+                <article class="project-service" data-reveal="fade" data-reveal-delay="<?= $i + 1 ?>">
 
                     <span class="project-service__icon">
                         ✓
