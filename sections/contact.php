@@ -2,34 +2,54 @@
 
     <div class="container">
 
+        <div class="section-header">
+
+            <span class="section-subtitle">
+                Contacto
+            </span>
+
+            <h2 class="section-title">
+                ¿Tenés un proyecto en mente?
+            </h2>
+
+            <p class="section-description">
+                Cada proyecto comienza con una conversación. Contanos tu idea y nos comunicaremos con vos para asesorarte y acompañarte durante todo el proceso.
+            </p>
+
+        </div>
+
         <div class="contact__wrapper">
 
             <div class="contact__info">
 
-                <span class="contact__subtitle">
-                    CONTACTO
-                </span>
-
-                <h2 class="contact__title">
-                    ¿Tenés un proyecto en mente?
-                </h2>
-
-                <p class="contact__text">
-                    Contanos tu idea y nos pondremos en contacto para analizar tu proyecto y brindarte el mejor asesoramiento.
-                </p>
-
                 <ul class="contact__list">
 
                     <li>
-                        <strong>Teléfono:</strong> +54 381 XXX-XXXX
+                        <strong>Teléfono:</strong>
+                        <a href="tel:+543884480633">
+                            +54 388 4480633
+                        </a>
                     </li>
 
                     <li>
-                        <strong>Email:</strong> contacto@copla.com.ar
+                        <strong>Email:</strong>
+                        <a href="mailto:coplajujuy@gmail.com">
+                            coplajujuy@gmail.com
+                        </a>
                     </li>
 
                     <li>
-                        <strong>Ubicación:</strong> San Miguel de Tucumán, Argentina
+                        <strong>Ubicación:</strong>
+                        San Salvador de Jujuy, Argentina
+                    </li>
+
+                    <li>
+                        <strong>Instagram:</strong>
+                        <a href="https://www.instagram.com/estudio.copla"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            @estudio.copla
+                        </a>
                     </li>
 
                 </ul>
@@ -38,31 +58,18 @@
 
             <div class="contact__form">
 
-                <form action="mail/send.php" method="post">
+                <form id="contactForm">
 
                     <input
                         type="text"
-                        name="nombre"
-                        placeholder="Nombre completo"
+                        id="nombre"
+                        placeholder="Nombre"
                         required
-                    >
-
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Correo electrónico"
-                        required
-                    >
-
-                    <input
-                        type="text"
-                        name="telefono"
-                        placeholder="Teléfono"
                     >
 
                     <textarea
-                        name="mensaje"
-                        rows="6"
+                        id="mensaje"
+                        rows="8"
                         placeholder="Contanos sobre tu proyecto..."
                         required
                     ></textarea>
@@ -71,7 +78,9 @@
                         type="submit"
                         class="button button--primary">
 
-                        Enviar consulta
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        Iniciar conversación
 
                     </button>
 
@@ -96,3 +105,28 @@
     </div>
 
 </section>
+
+<script>
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    const texto =
+`Hola, soy ${nombre}.
+
+Me gustaría consultar por el siguiente proyecto:
+
+${mensaje}`;
+
+    const url =
+        "https://wa.me/543884480633?text=" + encodeURIComponent(texto);
+
+    window.open(url, "_blank");
+
+});
+
+</script>
