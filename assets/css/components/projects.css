@@ -40,6 +40,10 @@
 
 .projects__text{
 
+    max-width:620px;
+
+    margin:0 auto;
+
     color:var(--color-text-light);
 
     line-height:1.8;
@@ -50,52 +54,155 @@
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
 
     gap:2rem;
 
-    margin-top:4rem;
+    margin-top:5rem;
 
 }
 
 .project-card{
 
-    background:#fff;
+    position:relative;
+
+    display:block;
+
+    aspect-ratio:4/5;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    text-decoration:none;
+
+    color:#fff;
 
 }
 
 .project-card__image{
 
-    aspect-ratio:4/3;
+    width:100%;
 
-    border-radius:18px;
+    height:100%;
 
-    background:#f3f3f3;
+    object-fit:cover;
 
-    border:2px dashed #d7d7d7;
+    transition:transform .7s ease;
+
+}
+
+.project-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.18);
+
+    transition:.4s;
+
+}
+
+.project-card__overlay{
+
+    position:absolute;
+
+    inset:0;
 
     display:flex;
 
-    justify-content:center;
+    flex-direction:column;
 
-    align-items:center;
+    justify-content:flex-end;
 
-    color:#8d8d8d;
+    padding:2rem;
 
-    margin-bottom:1.5rem;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.92),
+        rgba(0,0,0,.35),
+        transparent
+    );
+
+    opacity:0;
+
+    transform:translateY(25px);
+
+    transition:.45s ease;
+
+    z-index:2;
 
 }
 
-.project-card h3{
+.project-card__category{
 
-    margin-bottom:.8rem;
+    margin-bottom:.7rem;
+
+    font-size:.8rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:.25rem;
+
+    opacity:.8;
 
 }
 
-.project-card p{
+.project-card__footer{
 
-    color:var(--color-text-light);
+    display:flex;
 
-    line-height:1.7;
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    gap:1rem;
+
+}
+
+.project-card__title{
+
+    margin:0;
+
+    font-size:2rem;
+
+    line-height:1.05;
+
+}
+
+.project-card__arrow{
+
+    font-size:2rem;
+
+    transition:.35s;
+
+}
+
+.project-card:hover::after{
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.project-card:hover .project-card__image{
+
+    transform:scale(1.08);
+
+}
+
+.project-card:hover .project-card__overlay{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.project-card:hover .project-card__arrow{
+
+    transform:translateX(10px);
 
 }

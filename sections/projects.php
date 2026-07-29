@@ -3,6 +3,7 @@
 $projects = require __DIR__ . '/../config/projects.php';
 
 ?>
+
 <section id="proyectos" class="projects section">
 
     <div class="container">
@@ -20,52 +21,55 @@ $projects = require __DIR__ . '/../config/projects.php';
                 </h2>
 
                 <p class="projects__text">
-                    Algunos de nuestros proyectos representativos. Próximamente se incorporarán imágenes y descripciones reales.
+                    Algunos de nuestros proyectos representativos.
                 </p>
 
             </div>
 
-        <div class="projects__grid">
+            <div class="projects__grid">
 
-            <?php foreach ($projects as $project): ?>
+                <?php foreach ($projects as $project): ?>
 
-                <article class="project">
+                    <a
+                        href="<?= BASE_URL ?>/pages/project.php?slug=<?= urlencode($project['slug']) ?>"
+                        class="project-card">
 
-                    <img
-                        class="project__image"
-                        src="assets/img/projects/<?= $project['cover']; ?>"
-                        alt="<?= htmlspecialchars($project['title']); ?>"
-                    >
+                        <img
+                            class="project-card__image"
+                            src="<?= BASE_URL ?>/assets/img/projects/<?= htmlspecialchars($project['hero']) ?>"
+                            alt="<?= htmlspecialchars($project['title']) ?>">
 
-                    <div class="project__content">
+                        <div class="project-card__overlay">
 
-                        <span class="project__category">
+                            <span class="project-card__category">
 
-                            <?= htmlspecialchars($project['category']); ?>
+                                <?= htmlspecialchars($project['category']) ?>
 
-                        </span>
+                            </span>
 
-                        <h3 class="project__title">
+                            <div class="project-card__footer">
 
-                            <?= htmlspecialchars($project['title']); ?>
+                                <h3 class="project-card__title">
 
-                        </h3>
+                                    <?= htmlspecialchars($project['title']) ?>
 
-                        <a
-                            href="#"
-                            class="project__link">
+                                </h3>
 
-                            Ver proyecto
+                                <span class="project-card__arrow">
 
-                        </a>
+                                    →
 
-                    </div>
+                                </span>
 
-                </article>
+                            </div>
 
-            <?php endforeach; ?>
+                        </div>
 
-        </div>
+                    </a>
+
+                <?php endforeach; ?>
+
+            </div>
 
         </div>
 

@@ -18,6 +18,8 @@ define('SITE_NAME', 'Estudio COPLA');
 
 define('SITE_URL', 'http://localhost/estudiocopla');
 
+define('BASE_URL', '/estudiocopla');
+
 /*
 |--------------------------------------------------------------------------
 | Información de contacto

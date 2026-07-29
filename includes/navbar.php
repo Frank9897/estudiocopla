@@ -6,6 +6,8 @@
 | Barra de navegación principal.
 |--------------------------------------------------------------------------
 */
+
+$is_project_page = basename($_SERVER['PHP_SELF']) === 'project.php';
 ?>
 
 <header class="header">
@@ -14,7 +16,9 @@
 
         <div class="container navbar__container">
 
-            <a href="#inicio" class="navbar__logo">
+            <a
+            href="<?= $is_project_page ? BASE_URL . '/#proyectos' : BASE_URL . '/#inicio' ?>"
+            class="navbar__logo">
 
                 <?= SITE_NAME ?>
 
@@ -22,34 +26,50 @@
 
             <ul class="navbar__menu">
 
-                <li>
-                    <a class="navbar__link" href="#nosotros">
-                        Nosotros
-                    </a>
-                </li>
+                <?php if ($is_project_page): ?>
 
-                <li>
-                    <a class="navbar__link" href="#servicios">
-                        Servicios
-                    </a>
-                </li>
+                    <li>
+                        <a
+                            class="navbar__link"
+                            href="<?= BASE_URL ?>/#proyectos">
 
-                <li>
-                    <a class="navbar__link" href="#proyectos">
-                        Proyectos
-                    </a>
-                </li>
+                            ← Volver a proyectos
 
-                <li>
-                    <a class="navbar__link" href="#contacto">
-                        Contacto
-                    </a>
-                </li>
+                        </a>
+                    </li>
+
+                <?php else: ?>
+
+                    <li>
+                        <a class="navbar__link" href="<?= BASE_URL ?>/#nosotros">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navbar__link" href="<?= BASE_URL ?>/#servicios">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navbar__link" href="<?= BASE_URL ?>/#proyectos">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navbar__link" href="<?= BASE_URL ?>/#contacto">
+                            Contacto
+                        </a>
+                    </li>
+
+                <?php endif; ?>
 
             </ul>
 
             <a
-                href="#contacto"
+                href="<?= BASE_URL ?>/#contacto"
                 class="navbar__button">
 
                 Presupuesto

@@ -1,1 +1,1 @@
-<script src="assets/js/navbar.js"></script>
+<script src="<?= BASE_URL ?>/assets/js/navbar.js"></script>

@@ -4,37 +4,100 @@
 
         <div class="footer__content">
 
-            <div>
+            <h2 class="footer__logo">
 
-                <h3>COPLA</h3>
+                Estudio COPLA
 
-                <p>
-                    Arquitectura, diseño y planificación de proyectos.
-                </p>
+            </h2>
+
+            <p class="footer__subtitle">
+
+                Confort, planificación y arquitectura.
+
+            </p>
+
+            <div class="footer__contacts">
+
+                <a
+                    href="tel:+543884480633"
+                    class="footer__contact">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span>
+
+                        +54 388 4480633
+
+                    </span>
+
+                </a>
+
+                <a
+                    href="mailto:coplajujuy@gmail.com"
+                    class="footer__contact">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>
+
+                        coplajujuy@gmail.com
+
+                    </span>
+
+                </a>
+
+                <a
+                    href="https://www.instagram.com/estudio.copla"
+                    target="_blank"
+                    class="footer__contact">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <span>
+
+                        Instagram
+
+                    </span>
+
+                </a>
+
+                <a
+                    href="https://www.facebook.com/Estudio.copla"
+                    target="_blank"
+                    class="footer__contact">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <span>
+
+                        Facebook
+
+                    </span>
+
+                </a>
+
+                <a
+                    href="https://www.tiktok.com/@estudio.copla"
+                    target="_blank"
+                    class="footer__contact">
+
+                    <i class="fa-brands fa-tiktok"></i>
+
+                    <span>
+
+                        TikTok
+
+                    </span>
+
+                </a>
 
             </div>
 
-            <nav class="footer__nav">
-
-                <a href="#nosotros">Nosotros</a>
-
-                <a href="#servicios">Servicios</a>
-
-                <a href="#proyectos">Proyectos</a>
-
-                <a href="#contacto">Contacto</a>
-
-            </nav>
-
         </div>
 
-        <div class="footer__bottom">
+        <div class="footer__copyright">
 
-            <p>
-
-                © <?= date('Y') ?> COPLA. Todos los derechos reservados.
-
-            </p>
+            © <?= date('Y') ?> Estudio COPLA · Todos los derechos reservados.
 
         </div>
 

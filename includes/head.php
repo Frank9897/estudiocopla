@@ -33,9 +33,7 @@
         name="author"
         content="Franco Vasquez">
 
-    <link
-        rel="icon"
-        href="favicon.ico">
+    <link rel="icon" href="<?= BASE_URL ?>/favicon.ico">
 
     <!-- ==========================
         Google Fonts
@@ -54,24 +52,10 @@
          Estilos CSS
     =========================== -->
 
-    <link
-        rel="stylesheet"
-        href="assets/css/reset.css">
-
-    <link
-        rel="stylesheet"
-        href="assets/css/variables.css">
-
-    <link
-        rel="stylesheet"
-        href="assets/css/style.css">
-
-    <link
-        rel="stylesheet"
-        href="assets/css/responsive.css">
-
-    <link
-        rel="stylesheet"
-        href="assets/css/animations.css">
-
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/reset.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/variables.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/responsive.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/animations.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/pages/project.css">
 </head>
