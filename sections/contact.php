@@ -71,7 +71,6 @@
                         id="mensaje"
                         rows="8"
                         placeholder="Contanos sobre tu proyecto..."
-                        required
                     ></textarea>
 
                     <button
