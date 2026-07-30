@@ -59,6 +59,12 @@ $is_project_page = basename($_SERVER['PHP_SELF']) === 'project.php';
                     </li>
 
                     <li>
+                        <a class="navbar__link" href="<?= BASE_URL ?>/#construccion">
+                            Construcción
+                        </a>
+                    </li>
+
+                    <li>
                         <a class="navbar__link" href="<?= BASE_URL ?>/#contacto">
                             Contacto
                         </a>

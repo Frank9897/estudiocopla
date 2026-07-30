@@ -7,7 +7,7 @@
             <div class="methodology__header" data-reveal="fade">
 
                 <span class="methodology__subtitle">
-                    NUESTRO MÉTODO
+                    NUESTRO DIFERENCIAL
                 </span>
 
                 <h2 class="methodology__title">
@@ -15,7 +15,7 @@
                 </h2>
 
                 <p class="methodology__text">
-                    El confort no es casualidad: es el resultado de una arquitectura pensada y una planificación inteligente, en cada etapa del proceso.
+                    Analizamos cada terreno en profundidad antes de tomar cualquier decisión de diseño.
                 </p>
 
             </div>
@@ -26,9 +26,9 @@
 
                     <span class="step-card__number">01</span>
 
-                    <h3>Reunión inicial</h3>
+                    <h3>Topografía</h3>
 
-                    <p>Conocemos las necesidades, el terreno y los objetivos del proyecto.</p>
+                    <p>Relevamos el terreno para definir la mejor implantación posible.</p>
 
                 </article>
 
@@ -36,9 +36,9 @@
 
                     <span class="step-card__number">02</span>
 
-                    <h3>Planificación</h3>
+                    <h3>Orientación</h3>
 
-                    <p>Analizamos topografía, orientación, entorno y normativas antes de diseñar.</p>
+                    <p>Estudiamos la orientación solar para maximizar luz natural y confort.</p>
 
                 </article>
 
@@ -46,9 +46,9 @@
 
                     <span class="step-card__number">03</span>
 
-                    <h3>Diseño y ejecución</h3>
+                    <h3>Entorno y contexto</h3>
 
-                    <p>Desarrollamos el proyecto arquitectónico y supervisamos cada etapa de obra.</p>
+                    <p>Analizamos el entorno urbano o natural que rodea al proyecto.</p>
 
                 </article>
 
@@ -56,11 +56,33 @@
 
                     <span class="step-card__number">04</span>
 
-                    <h3>Entrega final</h3>
+                    <h3>Normativas</h3>
 
-                    <p>Acompañamos hasta la entrega, garantizando calidad y satisfacción.</p>
+                    <p>Verificamos el código de edificación y las normativas vigentes en cada zona.</p>
 
                 </article>
+
+                <article class="step-card" data-reveal="fade" data-reveal-delay="5">
+
+                    <span class="step-card__number">05</span>
+
+                    <h3>Necesidades del cliente</h3>
+
+                    <p>Escuchamos y traducimos cada necesidad en el programa arquitectónico.</p>
+
+                </article>
+
+            </div>
+
+            <div class="methodology__closing" data-reveal="fade">
+
+                <p>
+                    Acompañamos también a nuestros clientes en la evaluación de terrenos, propiedades o inmuebles antes de su compra o alquiler, brindando criterios técnicos para elegir el lugar más adecuado para cada proyecto.
+                </p>
+
+                <strong>
+                    Las mejores decisiones se toman antes de construir.
+                </strong>
 
             </div>
 

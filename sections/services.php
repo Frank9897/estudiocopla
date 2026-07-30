@@ -7,7 +7,7 @@
             <div class="section-header" data-reveal="fade">
 
                 <span class="section-subtitle">
-                    SERVICIOS
+                    ¿QUÉ HACEMOS?
                 </span>
 
                 <h2 class="section-title">
@@ -15,7 +15,7 @@
                 </h2>
 
                 <p class="section-description">
-                    Proyectos arquitectónicos, dirección técnica, diseño interior, mobiliario a medida, topografía y construcción llave en mano.
+                    Un servicio integral que acompaña cada proyecto desde el proyecto arquitectónico hasta la entrega llave en mano.
                 </p>
 
             </div>
@@ -43,6 +43,22 @@
                     <span class="service-card__number">02</span>
 
                     <span class="service-card__icon">
+                        <i class="fa-solid fa-building"></i>
+                    </span>
+
+                    <h3>Construcción</h3>
+
+                    <p>
+                        Ejecutamos la obra con los más altos estándares de calidad, cuidando cada detalle del proceso.
+                    </p>
+
+                </article>
+
+                <article class="service-card" data-reveal="scale" data-reveal-delay="3">
+
+                    <span class="service-card__number">03</span>
+
+                    <span class="service-card__icon">
                         <i class="fa-solid fa-helmet-safety"></i>
                     </span>
 
@@ -54,25 +70,57 @@
 
                 </article>
 
-                <article class="service-card" data-reveal="scale" data-reveal-delay="3">
+                <article class="service-card" data-reveal="scale" data-reveal-delay="4">
 
-                    <span class="service-card__number">03</span>
+                    <span class="service-card__number">04</span>
 
                     <span class="service-card__icon">
                         <i class="fa-solid fa-couch"></i>
                     </span>
 
-                    <h3>Diseño Interior y Mobiliario</h3>
+                    <h3>Diseño Interior</h3>
 
                     <p>
-                        Interiorismo y mobiliario a medida que resuelven cada espacio con calidez y funcionalidad.
+                        Interiorismo que resuelve cada espacio combinando estética, confort y funcionalidad.
                     </p>
 
                 </article>
 
-                <article class="service-card" data-reveal="scale" data-reveal-delay="4">
+                <article class="service-card" data-reveal="scale" data-reveal-delay="5">
 
-                    <span class="service-card__number">04</span>
+                    <span class="service-card__number">05</span>
+
+                    <span class="service-card__icon">
+                        <i class="fa-solid fa-chair"></i>
+                    </span>
+
+                    <h3>Mobiliario a Medida</h3>
+
+                    <p>
+                        Piezas únicas diseñadas a medida para acompañar cada proyecto arquitectónico.
+                    </p>
+
+                </article>
+
+                <article class="service-card" data-reveal="scale" data-reveal-delay="6">
+
+                    <span class="service-card__number">06</span>
+
+                    <span class="service-card__icon">
+                        <i class="fa-solid fa-mountain"></i>
+                    </span>
+
+                    <h3>Topografía</h3>
+
+                    <p>
+                        Relevamos el terreno en profundidad para tomar las mejores decisiones antes de construir.
+                    </p>
+
+                </article>
+
+                <article class="service-card" data-reveal="scale" data-reveal-delay="7">
+
+                    <span class="service-card__number">07</span>
 
                     <span class="service-card__icon">
                         <i class="fa-solid fa-key"></i>

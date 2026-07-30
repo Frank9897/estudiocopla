@@ -37,9 +37,10 @@
 @import url("components/navbar.css?v=3");
 @import url("components/hero.css?v=3");
 @import url("components/about.css?v=3");
-@import url("components/services.css?v=3");
+@import url("components/services.css?v=4");
 @import url("components/projects.css?v=3");
-@import url("components/methodology.css?v=3");
+@import url("components/methodology.css?v=4");
+@import url("components/construction.css?v=1");
 @import url("components/contact.css?v=3");
 @import url("components/map.css?v=3");
 @import url("components/footer.css?v=3");
