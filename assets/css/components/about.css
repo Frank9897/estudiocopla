@@ -127,19 +127,30 @@
 
 }
 
-/* Badge flotante con dato destacado */
+/* Badges flotantes con datos destacados */
+
+.about__badges{
+
+    position:absolute;
+    left:2rem;
+    right:2rem;
+    bottom:-2.5rem;
+    z-index:2;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:1.5rem;
+
+}
 
 .about__badge{
 
-    position:absolute;
-    left:-2rem;
-    bottom:-2rem;
-    z-index:2;
+    flex:1 1 190px;
     display:flex;
     flex-direction:column;
     align-items:flex-start;
     gap:.2rem;
-    padding:1.6rem 2.1rem;
+    padding:1.5rem 1.8rem;
     background:#ffffff;
     border-radius:var(--radius-md);
     box-shadow:var(--shadow-lg);
@@ -147,10 +158,14 @@
 
 }
 
+.about__badge:nth-child(2){ animation-delay:.3s; }
+.about__badge:nth-child(3){ animation-delay:.6s; }
+.about__badge:nth-child(4){ animation-delay:.9s; }
+
 .about__badge strong{
 
     font-family:var(--font-heading);
-    font-size:2.2rem;
+    font-size:2rem;
     color:var(--color-primary);
     letter-spacing:1px;
 
@@ -158,58 +173,29 @@
 
 .about__badge span{
 
-    font-size:.85rem;
+    font-size:.8rem;
     color:var(--color-text-light);
     text-transform:uppercase;
     letter-spacing:1px;
 
 }
 
-/* Grilla de estadísticas */
+@media (max-width:900px){
 
-.about__stats{
+    .about__badges{
 
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:2rem;
-    width:100%;
-    max-width:1100px;
-    margin-top:6rem;
-    padding-top:4rem;
-    border-top:1px solid var(--color-border);
+        position:static;
+        margin-top:2.5rem;
+
+    }
 
 }
 
-.about__stat{
+@media (max-width:480px){
 
-    text-align:center;
+    .about__badges{
 
-}
-
-.about__stat strong{
-
-    display:block;
-    margin-bottom:.4rem;
-    font-family:var(--font-heading);
-    font-size:clamp(2rem,3vw,2.8rem);
-    color:var(--color-accent-dark);
-
-}
-
-.about__stat span{
-
-    font-size:.9rem;
-    color:var(--color-text-light);
-
-}
-
-@media (max-width:768px){
-
-    .about__badge{
-
-        left:1rem;
-        bottom:-1.5rem;
-        padding:1.1rem 1.4rem;
+        flex-direction:column;
 
     }
 

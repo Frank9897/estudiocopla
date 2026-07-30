@@ -20,7 +20,9 @@ return [
         ],
 
         'services' => [
-            'Arquitectura'
+            'Proyecto Arquitectónico',
+            'Dirección Técnica',
+            'Diseño de Interiores'
         ]
     ],
 
@@ -41,7 +43,9 @@ return [
         ],
 
         'services' => [
-            'Arquitectura'
+            'Proyecto Arquitectónico',
+            'Topografía',
+            'Dirección Técnica'
         ]
     ],
 
@@ -64,7 +68,8 @@ return [
 
         'services' => [
             'Remodelación',
-            'Arquitectura'
+            'Proyecto Arquitectónico',
+            'Dirección Técnica'
         ]
     ],
 
@@ -85,7 +90,8 @@ return [
         ],
 
         'services' => [
-            'Arquitectura'
+            'Proyecto Arquitectónico',
+            'Dirección Técnica'
         ]
     ],
 
@@ -107,8 +113,10 @@ return [
         ],
 
         'services' => [
-            'Arquitectura',
-            'Interiorismo'
+            'Asesoramiento en Selección de Inmueble',
+            'Proyecto Arquitectónico',
+            'Interiorismo',
+            'Equipamiento a Medida'
         ]
     ],
 
@@ -129,8 +137,10 @@ return [
         ],
 
         'services' => [
-            'Arquitectura',
-            'Interiorismo'
+            'Asesoramiento en Selección de Inmueble',
+            'Proyecto Arquitectónico',
+            'Interiorismo',
+            'Equipamiento a Medida'
         ]
     ],
 
@@ -151,8 +161,9 @@ return [
         ],
 
         'services' => [
-            'Arquitectura',
-            'Proyecto público'
+            'Proyecto Arquitectónico',
+            'Dirección Técnica',
+            'Proyecto Público'
         ]
     ]
 

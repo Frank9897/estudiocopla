@@ -59,10 +59,10 @@
          Estilos CSS
     =========================== -->
 
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/reset.css">
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/variables.css">
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/style.css">
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/responsive.css">
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/animations.css">
-    <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/pages/project.css">
+    <link rel="stylesheet" href="<?= asset_v('/assets/css/reset.css') ?>">
+    <link rel="stylesheet" href="<?= asset_v('/assets/css/variables.css') ?>">
+    <link rel="stylesheet" href="<?= asset_v('/assets/css/style.css') ?>">
+    <link rel="stylesheet" href="<?= asset_v('/assets/css/responsive.css') ?>">
+    <link rel="stylesheet" href="<?= asset_v('/assets/css/animations.css') ?>">
+    <link rel="stylesheet" href="<?= asset_v('/assets/css/pages/project.css') ?>">
 </head>

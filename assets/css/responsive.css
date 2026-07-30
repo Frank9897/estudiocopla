@@ -12,12 +12,6 @@
 
 @media (max-width:1200px){
 
-    .about__stats{
-
-        gap:1.5rem;
-
-    }
-
     .methodology__grid{
 
         grid-template-columns:repeat(2,1fr);
@@ -158,12 +152,6 @@
 
     }
 
-    .about__stats{
-
-        grid-template-columns:1fr 1fr;
-
-    }
-
     .project-hero__title{
 
         font-size:clamp(2.4rem,10vw,4rem);
@@ -203,12 +191,6 @@
     .hero__title{
 
         font-size:clamp(2.2rem,9vw,3.2rem);
-
-    }
-
-    .about__stats{
-
-        grid-template-columns:1fr;
 
     }
 

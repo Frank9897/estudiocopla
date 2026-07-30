@@ -31,35 +31,28 @@
 
             </div>
 
-            <div class="about__badge">
+            <div class="about__badges">
 
-                <strong>+10</strong>
-                <span>Años de experiencia</span>
+                <div class="about__badge" data-reveal="fade" data-reveal-delay="1">
+                    <strong>+10</strong>
+                    <span>Años de experiencia</span>
+                </div>
 
-            </div>
+                <div class="about__badge" data-reveal="fade" data-reveal-delay="2">
+                    <strong>7+</strong>
+                    <span>Proyectos destacados</span>
+                </div>
 
-        </div>
+                <div class="about__badge" data-reveal="fade" data-reveal-delay="3">
+                    <strong>100%</strong>
+                    <span>Llave en mano</span>
+                </div>
 
-        <div class="about__stats">
+                <div class="about__badge" data-reveal="fade" data-reveal-delay="4">
+                    <strong>1</strong>
+                    <span>Único equipo responsable</span>
+                </div>
 
-            <div class="about__stat" data-reveal="fade" data-reveal-delay="1">
-                <strong>+10</strong>
-                <span>Años de experiencia</span>
-            </div>
-
-            <div class="about__stat" data-reveal="fade" data-reveal-delay="2">
-                <strong>7+</strong>
-                <span>Proyectos destacados</span>
-            </div>
-
-            <div class="about__stat" data-reveal="fade" data-reveal-delay="3">
-                <strong>100%</strong>
-                <span>Llave en mano</span>
-            </div>
-
-            <div class="about__stat" data-reveal="fade" data-reveal-delay="4">
-                <strong>1</strong>
-                <span>Único equipo responsable</span>
             </div>
 
         </div>
