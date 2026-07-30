@@ -170,7 +170,12 @@
 
     }
 
-    .project-services__grid,
+    .project-service{
+
+        flex-basis:100%;
+
+    }
+
     .project-gallery__grid{
 
         grid-template-columns:1fr;

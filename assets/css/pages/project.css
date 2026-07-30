@@ -205,15 +205,16 @@
 
 .project-services__grid{
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:2rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
     margin-top:4rem;
 
 }
 
 .project-service{
 
+    flex:0 1 280px;
     padding:2rem;
     border:1px solid var(--color-border);
     border-radius:var(--radius-md);

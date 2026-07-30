@@ -22,6 +22,27 @@ define('BASE_URL', '/estudiocopla');
 
 /*
 |--------------------------------------------------------------------------
+| Cache-busting de assets
+|--------------------------------------------------------------------------
+| asset_v() agrega ?v=<fecha de modificación> a css/js locales, para que
+| el navegador no sirva una versión vieja cacheada cuando el archivo
+| cambia durante el desarrollo.
+|--------------------------------------------------------------------------
+*/
+
+define('ROOT_PATH', dirname(__DIR__));
+
+function asset_v(string $relativePath): string
+{
+    $absolutePath = ROOT_PATH . $relativePath;
+
+    $version = is_file($absolutePath) ? filemtime($absolutePath) : time();
+
+    return BASE_URL . $relativePath . '?v=' . $version;
+}
+
+/*
+|--------------------------------------------------------------------------
 | Información de contacto
 |--------------------------------------------------------------------------
 */

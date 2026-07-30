@@ -7,34 +7,42 @@
 |--------------------------------------------------------------------------
 */
 
+/*
+|--------------------------------------------------------------------------
+| Versión de caché: subí este número cada vez que edites un archivo
+| dentro de base/, layout/ o components/ y quieras forzar al navegador
+| a descartar la versión vieja cacheada de esos archivos.
+|--------------------------------------------------------------------------
+*/
+
 /*=====================================
 =            BASE                     =
 =====================================*/
 
-@import url("base/typography.css");
+@import url("base/typography.css?v=3");
 
 /*=====================================
 =            LAYOUT                   =
 =====================================*/
 
-@import url("layout/container.css");
-@import url("layout/section.css");
+@import url("layout/container.css?v=3");
+@import url("layout/section.css?v=3");
 
 /*=====================================
 =          COMPONENTES                =
 =====================================*/
 
-@import url("components/section-header.css");
-@import url("components/button.css");
-@import url("components/navbar.css");
-@import url("components/hero.css");
-@import url("components/about.css");
-@import url("components/services.css");
-@import url("components/projects.css");
-@import url("components/methodology.css");
-@import url("components/contact.css");
-@import url("components/map.css");
-@import url("components/footer.css");
+@import url("components/section-header.css?v=3");
+@import url("components/button.css?v=3");
+@import url("components/navbar.css?v=3");
+@import url("components/hero.css?v=3");
+@import url("components/about.css?v=3");
+@import url("components/services.css?v=3");
+@import url("components/projects.css?v=3");
+@import url("components/methodology.css?v=3");
+@import url("components/contact.css?v=3");
+@import url("components/map.css?v=3");
+@import url("components/footer.css?v=3");
 
 /*=====================================
 =          CONFIGURACIÓN GLOBAL       =
