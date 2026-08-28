@@ -2,14 +2,14 @@
 |--------------------------------------------------------------------------
 | SECTION HEADER
 |--------------------------------------------------------------------------
+| Encabezado reutilizable para mantener la misma jerarquía visual.
+|--------------------------------------------------------------------------
 */
 
 .section-header{
 
     max-width:720px;
-
     margin:0 auto 4rem;
-
     text-align:center;
 
 }
@@ -17,32 +17,23 @@
 .section-header--left{
 
     margin:0 0 4rem;
-
     text-align:left;
 
 }
 
-.section-subtitle,
-.section-header__subtitle{
+.section-subtitle{
 
     display:inline-block;
-
     margin-bottom:1rem;
-
     font-size:.9rem;
-
     font-weight:600;
-
     letter-spacing:3px;
-
     text-transform:uppercase;
-
     color:var(--color-accent-dark);
 
 }
 
-.section-title,
-.section-header__title{
+.section-title{
 
     margin-bottom:1.5rem;
 
@@ -51,7 +42,6 @@
 .section-description{
 
     color:var(--color-text-light);
-
     line-height:1.8;
 
 }
