@@ -26,28 +26,29 @@
 
                     <li>
                         <strong>Teléfono</strong>
-                        <a href="tel:+543884480633">
-                            +54 388 4480633
+                        <a href="tel:<?= SITE_PHONE ?>">
+                            <?= SITE_PHONE ?>
                         </a>
                     </li>
 
                     <li>
                         <strong>Email</strong>
-                        <a href="mailto:coplajujuy@gmail.com">
-                            coplajujuy@gmail.com
+                        <a href="mailto:<?= SITE_EMAIL ?>">
+                            <?= SITE_EMAIL ?>
                         </a>
                     </li>
 
                     <li>
                         <strong>Ubicación</strong>
-                        San Salvador de Jujuy, Argentina
+                        <?= SITE_LOCATION ?>
                     </li>
 
                     <li>
                         <strong>Instagram</strong>
-                        <a href="https://www.instagram.com/estudio.copla"
-                           target="_blank"
-                           rel="noopener noreferrer">
+                        <a
+                            href="<?= SITE_INSTAGRAM ?>"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             @estudio.copla
                         </a>
                     </li>
@@ -89,34 +90,7 @@
 
         </div>
 
-        <!--
-        |----------------------------------------------------------------
-        | MAPA DE UBICACIÓN — pendiente de dirección real
-        |----------------------------------------------------------------
-        | Por ahora está centrado en la ciudad (San Salvador de Jujuy)
-        | porque todavía no tenemos la dirección exacta del estudio.
-        |
-        | Cuando la consigan, para actualizarlo:
-        |
-        |   1) Rápido (sin ir a Google Maps):
-        |      cambiar el texto después de "q=" en el src de abajo por
-        |      la dirección real, y subir el "z=" (zoom) a 16 o más.
-        |      Ej: q=Av.+Ejemplo+123,+San+Salvador+de+Jujuy&z=16
-        |
-        |   2) Preciso (recomendado si el local está en Google Maps):
-        |      buscar el lugar en Google Maps > "Compartir" >
-        |      "Insertar un mapa" > copiar el src="...embed?pb=..."
-        |      que da ahí y pegarlo tal cual acá abajo.
-        |
-        | Si más adelante quieren mostrar también las ubicaciones de
-        | los proyectos (Casa Serena, Casa Río, etc.) en un mismo mapa
-        | con varios pines, eso ya no entra en un iframe simple como
-        | este — se arma con "Google My Maps" (gratis, sin API key) o
-        | con la API de Google Maps + JavaScript. Avisen cuando tengan
-        | esas direcciones y lo armamos.
-        |----------------------------------------------------------------
-        -->
-
+        <!-- El mapa se mantiene centrado en San Salvador de Jujuy hasta contar con la dirección exacta. -->
         <div class="contact__map" data-reveal="fade">
 
             <iframe
@@ -150,7 +124,7 @@ Me gustaría consultar por el siguiente proyecto:
 ${mensaje}`;
 
     const url =
-        "https://wa.me/543884480633?text=" + encodeURIComponent(texto);
+        "https://wa.me/<?= SITE_WHATSAPP ?>?text=" + encodeURIComponent(texto);
 
     window.open(url, "_blank");
 
