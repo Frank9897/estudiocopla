@@ -9,7 +9,11 @@
     position:relative;
     margin-top:6rem;
     padding:6rem 0 2rem;
-    background:var(--gradient-dark);
+    background-image:
+        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij4KPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjODllMGQyIiBzdHJva2Utd2lkdGg9IjIiIG9wYWNpdHk9IjAuMDciPgo8cGF0aCBkPSJNMCAxNiBMMTYgMCBMMzIgMTYgTDQ4IDAgTDY0IDE2Ii8+CjxwYXRoIGQ9Ik0wIDQ4IEwxNiAzMiBMMzIgNDggTDQ4IDMyIEw2NCA0OCIvPgo8cGF0aCBkPSJNLTE2IDMyIEwwIDE2IEwxNiAzMiBMMzIgMTYgTDQ4IDMyIEw2NCAxNiBMODAgMzIiLz4KPC9nPgo8L3N2Zz4="),
+        var(--gradient-dark);
+    background-repeat:repeat, no-repeat;
+    background-size:64px 64px, cover;
     color:#fff;
     overflow:hidden;
 
