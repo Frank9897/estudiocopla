@@ -2,8 +2,8 @@
 |--------------------------------------------------------------------------
 | RESPONSIVE
 |--------------------------------------------------------------------------
-| Ajustes estructurales de la página según el tamaño de pantalla.
-| Los estilos específicos del navbar viven en navbar.css.
+| Ajustes estructurales para tablets y dispositivos móviles.
+| Los estilos específicos de cada componente permanecen en su archivo.
 |--------------------------------------------------------------------------
 */
 
@@ -91,13 +91,6 @@
 
     }
 
-    .footer__contacts{
-
-        flex-direction:column;
-        gap:1.2rem;
-
-    }
-
     .project-hero__title{
 
         font-size:clamp(2.4rem,10vw,4rem);
@@ -134,10 +127,29 @@
 
     }
 
+    .navbar__logo img{
+
+        height:46px;
+
+    }
+
+    .navbar.scrolled .navbar__logo img{
+
+        height:40px;
+
+    }
+
     .hero__title{
 
         font-size:clamp(2.2rem,9vw,3.2rem);
 
     }
+
+}
+
+/* Evita que el contenido se desplace mientras el menú móvil está abierto. */
+body.no-scroll{
+
+    overflow:hidden;
 
 }
