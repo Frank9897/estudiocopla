@@ -3,7 +3,7 @@
 |--------------------------------------------------------------------------
 | Archivo: navbar.php
 |--------------------------------------------------------------------------
-| Barra de navegación principal.
+| Navegación principal y navegación simplificada para proyectos.
 |--------------------------------------------------------------------------
 */
 
@@ -17,8 +17,8 @@ $is_project_page = basename($_SERVER['PHP_SELF']) === 'project.php';
         <div class="container navbar__container">
 
             <a
-            href="<?= $is_project_page ? BASE_URL . '/#proyectos' : BASE_URL . '/#inicio' ?>"
-            class="navbar__logo">
+                href="<?= $is_project_page ? BASE_URL . '/#proyectos' : BASE_URL . '/#inicio' ?>"
+                class="navbar__logo">
 
                 <img
                     src="<?= BASE_URL ?>/assets/img/logo/logo-primario-mint.png"
@@ -34,9 +34,7 @@ $is_project_page = basename($_SERVER['PHP_SELF']) === 'project.php';
                         <a
                             class="navbar__link"
                             href="<?= BASE_URL ?>/#proyectos">
-
                             ← Volver a proyectos
-
                         </a>
                     </li>
 
@@ -76,13 +74,15 @@ $is_project_page = basename($_SERVER['PHP_SELF']) === 'project.php';
 
             </ul>
 
-            <a
-                href="<?= BASE_URL ?>/#contacto"
-                class="navbar__button">
+            <?php if (!$is_project_page): ?>
 
-                Presupuesto
+                <a
+                    href="<?= BASE_URL ?>/#contacto"
+                    class="navbar__button">
+                    Presupuesto
+                </a>
 
-            </a>
+            <?php endif; ?>
 
             <button
                 type="button"
