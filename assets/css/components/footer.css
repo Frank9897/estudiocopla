@@ -2,6 +2,8 @@
 |--------------------------------------------------------------------------
 | FOOTER
 |--------------------------------------------------------------------------
+| Pie de página de marca con logo centrado y accesos de contacto.
+|--------------------------------------------------------------------------
 */
 
 .footer{
@@ -39,19 +41,23 @@
 
 }
 
+/* El logo queda centrado independientemente del ancho del contenedor. */
 .footer__logo{
 
-    margin-bottom:1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 0 1.5rem;
 
 }
 
 .footer__logo img{
 
-    height:clamp(56px,8vw,88px);
+    display:block;
+    height:clamp(64px,9vw,96px);
     width:auto;
 
 }
-
 
 .footer__contacts{
 
@@ -110,4 +116,5 @@
     text-align:center;
     color:rgba(255,255,255,.4);
     font-size:.9rem;
+
 }
