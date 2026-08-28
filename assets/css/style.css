@@ -7,47 +7,25 @@
 |--------------------------------------------------------------------------
 */
 
-/*
-|--------------------------------------------------------------------------
-| Versión de caché: subí este número cada vez que edites un archivo
-| dentro de base/, layout/ o components/ y quieras forzar al navegador
-| a descartar la versión vieja cacheada de esos archivos.
-|--------------------------------------------------------------------------
-*/
+/* Versionado común de imports para evitar estilos antiguos en caché. */
 
-/*=====================================
-=            BASE                     =
-=====================================*/
+@import url("base/typography.css?v=7");
 
-@import url("base/typography.css?v=5");
+@import url("layout/container.css?v=7");
+@import url("layout/section.css?v=7");
 
-/*=====================================
-=            LAYOUT                   =
-=====================================*/
-
-@import url("layout/container.css?v=5");
-@import url("layout/section.css?v=5");
-
-/*=====================================
-=          COMPONENTES                =
-=====================================*/
-
-@import url("components/section-header.css?v=5");
-@import url("components/button.css?v=5");
-@import url("components/navbar.css?v=5");
-@import url("components/hero.css?v=5");
-@import url("components/about.css?v=5");
-@import url("components/services.css?v=5");
-@import url("components/projects.css?v=5");
-@import url("components/methodology.css?v=6");
-@import url("components/construction.css?v=5");
-@import url("components/contact.css?v=5");
-@import url("components/map.css?v=5");
-@import url("components/footer.css?v=6");
-
-/*=====================================
-=          CONFIGURACIÓN GLOBAL       =
-=====================================*/
+@import url("components/section-header.css?v=7");
+@import url("components/button.css?v=7");
+@import url("components/navbar.css?v=7");
+@import url("components/hero.css?v=7");
+@import url("components/about.css?v=7");
+@import url("components/services.css?v=7");
+@import url("components/projects.css?v=7");
+@import url("components/methodology.css?v=7");
+@import url("components/construction.css?v=7");
+@import url("components/contact.css?v=7");
+@import url("components/map.css?v=7");
+@import url("components/footer.css?v=7");
 
 html{
 
@@ -58,8 +36,13 @@ html{
 body{
 
     background:var(--color-background);
-
     overflow-x:hidden;
+
+}
+
+body.no-scroll{
+
+    overflow:hidden;
 
 }
 
