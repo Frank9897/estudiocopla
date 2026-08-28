@@ -2,16 +2,12 @@
 |--------------------------------------------------------------------------
 | MAIN.JS
 |--------------------------------------------------------------------------
-| Inicializa el motor de animaciones de scroll (data-reveal), el
-| manejo de imágenes aún no disponibles (placeholders visuales) y
-| el preloader de marca.
+| Inicializa animaciones, preloader, menú móvil y comportamiento de
+| imágenes con fallback visual.
 |--------------------------------------------------------------------------
 */
 
 /* ============ Preloader ============ */
-/* Se oculta cuando la página termina de cargar (window.load), con un
-   mínimo de tiempo visible para que no sea un parpadeo, y con un
-   tope de seguridad por si algún recurso tarda demasiado. */
 
 (() => {
 
@@ -52,6 +48,57 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* ============ Menú móvil ============ */
+    /* El botón controla tanto el panel como el fondo. Al cerrar se
+       restaura el scroll para evitar que la página quede bloqueada. */
+
+    const toggle = document.querySelector(".navbar__toggle");
+    const menu = document.querySelector(".navbar__menu");
+    const overlay = document.querySelector(".navbar__overlay");
+
+    if(toggle && menu && overlay){
+
+        const closeMenu = () => {
+
+            menu.classList.remove("is-open");
+            overlay.classList.remove("is-open");
+            toggle.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+            toggle.setAttribute("aria-label", "Abrir menú");
+            document.body.classList.remove("menu-open");
+
+        };
+
+        toggle.addEventListener("click", () => {
+
+            const isOpen = menu.classList.toggle("is-open");
+
+            overlay.classList.toggle("is-open", isOpen);
+            toggle.classList.toggle("is-open", isOpen);
+            toggle.setAttribute("aria-expanded", String(isOpen));
+            toggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+            document.body.classList.toggle("menu-open", isOpen);
+
+        });
+
+        overlay.addEventListener("click", closeMenu);
+
+        menu.querySelectorAll("a").forEach((link) => {
+
+            link.addEventListener("click", closeMenu);
+
+        });
+
+        window.addEventListener("resize", () => {
+
+            if(window.innerWidth > 992){
+                closeMenu();
+            }
+
+        });
+
+    }
+
     /* ============ Scroll reveal ============ */
 
     const revealItems = document.querySelectorAll("[data-reveal]");
@@ -87,8 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ============ Placeholder para imágenes faltantes ============ */
-    /* Mientras no haya fotos reales, en vez de mostrar el ícono de
-       imagen rota se conserva el fondo decorativo del contenedor. */
 
     document.querySelectorAll("img[data-fallback]").forEach((img) => {
 
