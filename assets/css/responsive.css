@@ -2,9 +2,8 @@
 |--------------------------------------------------------------------------
 | RESPONSIVE
 |--------------------------------------------------------------------------
-| Ajustes responsivos globales. Los ajustes específicos de un componente
-| viven en su propio archivo (ver assets/css/components/*.css) cuando
-| son puntuales; acá se centralizan los breakpoints estructurales.
+| Ajustes estructurales de la página según el tamaño de pantalla.
+| Los estilos específicos del navbar viven en navbar.css.
 |--------------------------------------------------------------------------
 */
 
@@ -30,9 +29,17 @@
 
     }
 
-    .section{ padding:5rem 0; }
-    .section-lg{ padding:6rem 0; }
-    .section-sm{ padding:3.5rem 0; }
+    .section{
+        padding:5rem 0;
+    }
+
+    .section-lg{
+        padding:6rem 0;
+    }
+
+    .section-sm{
+        padding:3.5rem 0;
+    }
 
     .services__grid{
 
@@ -43,70 +50,6 @@
     .about__content{
 
         grid-template-columns:1fr;
-
-    }
-
-    .navbar__menu{
-
-        position:fixed;
-        inset:0 0 0 auto;
-        width:min(78%,340px);
-        height:100vh;
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        justify-content:center;
-        gap:2rem;
-        padding:0 2.5rem;
-        background:var(--color-primary);
-        transform:translateX(100%);
-        transition:transform .5s var(--ease-premium);
-        z-index:1002;
-        box-shadow:-18px 0 45px rgba(0,0,0,.2);
-
-    }
-
-    .navbar__menu.is-open{
-
-        transform:translateX(0);
-
-    }
-
-    .navbar__link{
-
-        color:#fff !important;
-        font-size:1.3rem;
-
-    }
-
-    .navbar__toggle{
-
-        display:flex;
-
-    }
-
-    .navbar__button{
-
-        display:none;
-
-    }
-
-    /* Fondo oscurecido sin aplicar desenfoque al contenido de la página. */
-    .navbar__overlay{
-
-        display:none;
-        position:fixed;
-        inset:0;
-        background:rgba(0,0,0,.45);
-        z-index:1001;
-        pointer-events:none;
-
-    }
-
-    .navbar__overlay.is-open{
-
-        display:block;
-        pointer-events:auto;
 
     }
 
@@ -188,18 +131,6 @@
     .navbar.scrolled .navbar__container{
 
         height:64px;
-
-    }
-
-    .navbar__logo img{
-
-        height:46px;
-
-    }
-
-    .navbar.scrolled .navbar__logo img{
-
-        height:40px;
 
     }
 
