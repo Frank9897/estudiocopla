@@ -16,6 +16,8 @@
 
         <div class="project-gallery__grid">
 
+            <?php $projectFolder = dirname($project['hero']); ?>
+
             <?php foreach ($project['gallery'] as $i => $image): ?>
 
                 <figure
@@ -25,9 +27,11 @@
                     data-reveal-delay="<?= ($i % 4) + 1 ?>">
 
                     <img
-                        src="<?= BASE_URL ?>/assets/img/projects/<?= htmlspecialchars($image) ?>"
+                        src="<?= BASE_URL ?>/assets/img/projects/<?= htmlspecialchars($projectFolder . '/' . ltrim($image, '/')) ?>"
                         alt="<?= htmlspecialchars($project['title']) ?>"
-                        data-fallback>
+                        data-fallback
+                        loading="lazy"
+                        decoding="async">
 
                 </figure>
 
