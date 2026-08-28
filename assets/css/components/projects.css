@@ -24,7 +24,7 @@
     margin-bottom:1rem;
     letter-spacing:3px;
     text-transform:uppercase;
-    color:var(--color-accent);
+    color:var(--color-accent-dark);
     font-size:.9rem;
     font-weight:600;
 
@@ -166,7 +166,7 @@
     height:44px;
     border-radius:50%;
     background:var(--color-accent);
-    color:#111;
+    color:var(--color-primary);
     font-size:1.3rem;
     transition:.35s var(--ease-premium);
     flex-shrink:0;

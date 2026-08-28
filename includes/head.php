@@ -47,7 +47,7 @@
         href="https://fonts.gstatic.com"
         crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Quantify:wght@400;700&display=swap"
         rel="stylesheet">
 
 

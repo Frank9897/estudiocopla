@@ -37,7 +37,7 @@ h6{
 
 .text-accent-word{
 
-    color: var(--color-accent);
+    color: var(--color-accent-dark);
     font-style: italic;
 
 }

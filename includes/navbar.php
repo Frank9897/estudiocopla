@@ -20,7 +20,9 @@ $is_project_page = basename($_SERVER['PHP_SELF']) === 'project.php';
             href="<?= $is_project_page ? BASE_URL . '/#proyectos' : BASE_URL . '/#inicio' ?>"
             class="navbar__logo">
 
-                <?= SITE_NAME ?>
+                <img
+                    src="<?= BASE_URL ?>/assets/img/logo/logo-primario-mint.png"
+                    alt="<?= SITE_NAME ?> — Confort, Planificación y Arquitectura">
 
             </a>
 

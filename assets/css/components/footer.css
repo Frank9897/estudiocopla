@@ -37,21 +37,17 @@
 
 .footer__logo{
 
-    margin-bottom:.8rem;
-    color:#fff;
-    font-size:clamp(2.8rem,6vw,4.5rem);
-    letter-spacing:2px;
+    margin-bottom:1rem;
 
 }
 
-.footer__subtitle{
+.footer__logo img{
 
-    margin-bottom:3rem;
-    color:rgba(255,255,255,.6);
-    font-size:1.05rem;
-    letter-spacing:1px;
+    height:clamp(56px,8vw,88px);
+    width:auto;
 
 }
+
 
 .footer__contacts{
 
@@ -86,7 +82,7 @@
 
 .footer__contact:hover{
 
-    color:#111111;
+    color:var(--color-primary);
     background:var(--color-accent);
     border-color:var(--color-accent);
     transform:translateY(-3px);
@@ -96,7 +92,7 @@
 
 .footer__contact:hover i{
 
-    color:#111111;
+    color:var(--color-primary);
 
 }
 

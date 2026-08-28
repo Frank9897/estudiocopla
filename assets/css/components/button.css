@@ -46,7 +46,7 @@
 
 .button--secondary{
 
-    border:2px solid var(--color-primary);
+    border:2px solid var(--color-secondary);
 
     color:var(--color-secondary);
 

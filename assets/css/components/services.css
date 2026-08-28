@@ -130,7 +130,7 @@
 .service-card:hover .service-card__icon{
 
     background:var(--color-accent);
-    color:#111111;
+    color:var(--color-primary);
     transform:rotate(-8deg) scale(1.05);
 
 }

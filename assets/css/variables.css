@@ -2,8 +2,8 @@
 |--------------------------------------------------------------------------
 | VARIABLES GLOBALES
 |--------------------------------------------------------------------------
-| Todas las variables del proyecto se definen aquí.
-| Esto facilita el mantenimiento y la consistencia visual.
+| Paleta y tipografía oficiales según el Manual de Identidad Visual
+| de Estudio coplA (creado por ARCANA).
 |--------------------------------------------------------------------------
 */
 
@@ -11,28 +11,28 @@
 
     /*
     |--------------------------------------------------------------------------
-    | Colores principales
+    | Colores de marca — Paleta Primaria
     |--------------------------------------------------------------------------
     */
 
-    --color-primary: #111111;
-    --color-primary-soft: #1a1a1a;
-    --color-primary-rgb: 17, 17, 17;
+    --color-primary: #000036;          /* Azul Cetáceo (Pantone 276 XGC) */
+    --color-primary-soft: #00006c;     /* Azul Cetáceo — variante secundaria, más saturada */
+    --color-primary-rgb: 0, 0, 54;
 
-    --color-secondary: #ffffff;
+    --color-secondary: #ffffff;        /* Blanco */
 
-    --color-text: #2d2d2d;
-    --color-text-light: #6b6b6b;
+    --color-text: #23232f;
+    --color-text-light: #6b6b76;
 
     --color-background: #ffffff;
-    --color-background-soft: #f6f3ee;
+    --color-background-soft: #f3f4f5; /* Blanco Anti-Flash (Pantone P106-1U) */
 
-    --color-accent: #c8a97e;
-    --color-accent-dark: #9c7c4f;
-    --color-accent-light: #ecdfc7;
-    --color-accent-rgb: 200, 169, 126;
+    --color-accent: #89e0d2;           /* Azul Medio Verde (Pantone P130-5C) */
+    --color-accent-dark: #1f7a6c;      /* variante oscura del acento, para texto legible sobre blanco */
+    --color-accent-light: #ccf2eb;     /* Azul Medio Verde — tinte secundario */
+    --color-accent-rgb: 137, 224, 210;
 
-    --color-border: #e7e3dc;
+    --color-border: #e2e4e8;
 
     /*
     |--------------------------------------------------------------------------
@@ -41,29 +41,29 @@
     */
 
     --gradient-dark:
-        linear-gradient(160deg, #0c0c0c 0%, #1c1a17 55%, #2a231a 100%);
+        linear-gradient(160deg, #00001c 0%, #000036 55%, #00006c 100%);
 
     --gradient-accent:
         linear-gradient(120deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
 
     --gradient-overlay:
-        linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.55) 65%, rgba(0,0,0,.85) 100%);
+        linear-gradient(180deg, rgba(0,0,54,.15) 0%, rgba(0,0,54,.55) 65%, rgba(0,0,20,.88) 100%);
 
     --gradient-fade-up:
-        linear-gradient(to top, rgba(0,0,0,.92) 0%, rgba(0,0,0,.35) 55%, transparent 100%);
+        linear-gradient(to top, rgba(0,0,32,.92) 0%, rgba(0,0,32,.35) 55%, transparent 100%);
 
     /*
     |--------------------------------------------------------------------------
-    | Tipografía
+    | Tipografía — según Manual de Marca
     |--------------------------------------------------------------------------
     */
 
     --font-primary:
-        "Manrope",
+        "Oxanium",
         sans-serif;
 
     --font-heading:
-        "Oswald",
+        "Quantify",
         sans-serif;
 
     /*
@@ -116,24 +116,24 @@
 
     /*
     |--------------------------------------------------------------------------
-    | Sombras — juego de luces y sombras
+    | Sombras
     |--------------------------------------------------------------------------
     */
 
     --shadow-xs:
-        0 2px 8px rgba(0,0,0,.06);
+        0 2px 8px rgba(0,0,54,.06);
 
     --shadow-soft:
-        0 10px 30px rgba(0,0,0,.08);
+        0 10px 30px rgba(0,0,54,.08);
 
     --shadow-md:
-        0 15px 40px rgba(0,0,0,.10);
+        0 15px 40px rgba(0,0,54,.10);
 
     --shadow-lg:
-        0 25px 60px rgba(0,0,0,.14);
+        0 25px 60px rgba(0,0,54,.14);
 
     --shadow-xl:
-        0 40px 90px rgba(0,0,0,.22);
+        0 40px 90px rgba(0,0,54,.22);
 
     --shadow-glow:
         0 0 0 1px rgba(var(--color-accent-rgb),.35),

@@ -164,7 +164,7 @@
 .construction__step:hover .construction__step-number{
 
     background:var(--gradient-accent);
-    color:#111111;
+    color:var(--color-primary);
     border-color:transparent;
     transform:scale(1.12) rotate(-6deg);
     box-shadow:var(--shadow-glow);
@@ -188,7 +188,7 @@
 .construction__final:hover .construction__step-number{
 
     background:var(--gradient-accent);
-    color:#111111;
+    color:var(--color-primary);
 
 }
 

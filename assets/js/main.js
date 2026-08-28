@@ -2,10 +2,53 @@
 |--------------------------------------------------------------------------
 | MAIN.JS
 |--------------------------------------------------------------------------
-| Inicializa el motor de animaciones de scroll (data-reveal) y el
-| manejo de imágenes aún no disponibles (placeholders visuales).
+| Inicializa el motor de animaciones de scroll (data-reveal), el
+| manejo de imágenes aún no disponibles (placeholders visuales) y
+| el preloader de marca.
 |--------------------------------------------------------------------------
 */
+
+/* ============ Preloader ============ */
+/* Se oculta cuando la página termina de cargar (window.load), con un
+   mínimo de tiempo visible para que no sea un parpadeo, y con un
+   tope de seguridad por si algún recurso tarda demasiado. */
+
+(() => {
+
+    const preloader = document.getElementById("preloader");
+
+    if(!preloader) return;
+
+    const MIN_VISIBLE_MS = 500;
+    const SAFETY_TIMEOUT_MS = 4000;
+
+    const shownAt = Date.now();
+    let hidden = false;
+
+    function hidePreloader(){
+
+        if(hidden) return;
+        hidden = true;
+
+        const elapsed = Date.now() - shownAt;
+        const wait = Math.max(0, MIN_VISIBLE_MS - elapsed);
+
+        setTimeout(() => {
+
+            preloader.classList.add("is-hidden");
+
+            preloader.addEventListener("transitionend", () => {
+                preloader.remove();
+            }, { once:true });
+
+        }, wait);
+
+    }
+
+    window.addEventListener("load", hidePreloader);
+    setTimeout(hidePreloader, SAFETY_TIMEOUT_MS);
+
+})();
 
 document.addEventListener("DOMContentLoaded", () => {
 

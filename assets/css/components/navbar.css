@@ -21,7 +21,7 @@
 
 .navbar.scrolled{
 
-    background:rgba(17,17,17,.72);
+    background:rgba(var(--color-primary-rgb),.72);
     backdrop-filter:blur(16px) saturate(160%);
     -webkit-backdrop-filter:blur(16px) saturate(160%);
     box-shadow:var(--shadow-md);
@@ -48,26 +48,25 @@
 .navbar__logo{
 
     position:relative;
-    color:#ffffff;
-    text-decoration:none;
-    font-family:var(--font-heading);
-    font-size:1.7rem;
-    font-weight:600;
-    letter-spacing:3px;
-    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    height:100%;
     transition:var(--transition);
 
 }
 
-.navbar__logo::after{
+.navbar__logo img{
 
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:36px;
-    height:2px;
-    background:var(--color-accent);
+    height:38px;
+    width:auto;
+    display:block;
+    transition:var(--transition-smooth);
+
+}
+
+.navbar.scrolled .navbar__logo img{
+
+    height:32px;
 
 }
 
@@ -145,7 +144,7 @@
 
     background:var(--color-accent);
     border-color:var(--color-accent);
-    color:#111111;
+    color:var(--color-primary);
     box-shadow:var(--shadow-glow);
     transform:translateY(-2px);
 

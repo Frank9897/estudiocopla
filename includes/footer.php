@@ -6,15 +6,11 @@
 
             <h2 class="footer__logo">
 
-                Estudio COPLA
+                <img
+                    src="<?= BASE_URL ?>/assets/img/logo/logo-primario-mint.png"
+                    alt="Estudio COPLA — Confort, Planificación y Arquitectura">
 
             </h2>
-
-            <p class="footer__subtitle">
-
-                Confort, planificación y arquitectura.
-
-            </p>
 
             <div class="footer__contacts">
 

@@ -12,9 +12,9 @@
     align-items:center;
     justify-content:center;
     overflow:hidden;
-    background-color:#161310;
+    background-color:#00001c;
     background-image:
-        radial-gradient(circle at 15% 20%, rgba(200,169,126,.16), transparent 45%),
+        radial-gradient(circle at 15% 20%, rgba(var(--color-accent-rgb),.16), transparent 45%),
         var(--gradient-dark),
         url("../img/hero.jpg");
     background-position:center;
