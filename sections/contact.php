@@ -64,14 +64,18 @@
                     <input
                         type="text"
                         id="nombre"
+                        name="nombre"
                         placeholder="Nombre"
+                        autocomplete="name"
                         required
                     >
 
                     <textarea
                         id="mensaje"
+                        name="mensaje"
                         rows="8"
                         placeholder="Contanos sobre tu proyecto..."
+                        required
                     ></textarea>
 
                     <button
@@ -80,7 +84,7 @@
 
                         <i class="fa-brands fa-whatsapp"></i>
 
-                        Iniciar conversación
+                        Enviar por WhatsApp
 
                     </button>
 
