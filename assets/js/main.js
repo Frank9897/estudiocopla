@@ -2,8 +2,9 @@
 |--------------------------------------------------------------------------
 | MAIN.JS
 |--------------------------------------------------------------------------
-| Inicializa animaciones, preloader, menú móvil y comportamiento de
-| imágenes con fallback visual.
+| Animaciones de entrada, placeholders de imágenes y preloader global.
+| El menú móvil pertenece exclusivamente a navbar.js para evitar eventos
+| duplicados sobre el mismo botón y estado.
 |--------------------------------------------------------------------------
 */
 
@@ -48,57 +49,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* ============ Menú móvil ============ */
-    /* El botón controla tanto el panel como el fondo. Al cerrar se
-       restaura el scroll para evitar que la página quede bloqueada. */
-
-    const toggle = document.querySelector(".navbar__toggle");
-    const menu = document.querySelector(".navbar__menu");
-    const overlay = document.querySelector(".navbar__overlay");
-
-    if(toggle && menu && overlay){
-
-        const closeMenu = () => {
-
-            menu.classList.remove("is-open");
-            overlay.classList.remove("is-open");
-            toggle.classList.remove("is-open");
-            toggle.setAttribute("aria-expanded", "false");
-            toggle.setAttribute("aria-label", "Abrir menú");
-            document.body.classList.remove("menu-open");
-
-        };
-
-        toggle.addEventListener("click", () => {
-
-            const isOpen = menu.classList.toggle("is-open");
-
-            overlay.classList.toggle("is-open", isOpen);
-            toggle.classList.toggle("is-open", isOpen);
-            toggle.setAttribute("aria-expanded", String(isOpen));
-            toggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
-            document.body.classList.toggle("menu-open", isOpen);
-
-        });
-
-        overlay.addEventListener("click", closeMenu);
-
-        menu.querySelectorAll("a").forEach((link) => {
-
-            link.addEventListener("click", closeMenu);
-
-        });
-
-        window.addEventListener("resize", () => {
-
-            if(window.innerWidth > 992){
-                closeMenu();
-            }
-
-        });
-
-    }
-
     /* ============ Scroll reveal ============ */
 
     const revealItems = document.querySelectorAll("[data-reveal]");
@@ -120,8 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }, {
 
-            threshold: .15,
-            rootMargin: "0px 0px -60px 0px"
+            threshold:.15,
+            rootMargin:"0px 0px -60px 0px"
 
         });
 
@@ -134,15 +84,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ============ Placeholder para imágenes faltantes ============ */
+    /* También detecta errores que ocurrieron antes de registrar el evento. */
 
     document.querySelectorAll("img[data-fallback]").forEach((img) => {
 
-        img.addEventListener("error", () => {
+        const showPlaceholder = () => {
 
             img.closest("[data-media]")?.classList.add("is-placeholder");
-            img.style.display = "none";
+            img.hidden = true;
 
-        }, { once:true });
+        };
+
+        img.addEventListener("error", showPlaceholder, { once:true });
+
+        if(img.complete && img.naturalWidth === 0){
+            showPlaceholder();
+        }
 
     });
 
