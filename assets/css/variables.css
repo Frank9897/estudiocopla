@@ -2,43 +2,30 @@
 |--------------------------------------------------------------------------
 | VARIABLES GLOBALES
 |--------------------------------------------------------------------------
-| Paleta y tipografía oficiales según el Manual de Identidad Visual
-| de Estudio coplA (creado por ARCANA).
+| Paleta y tipografía principales utilizadas por todo el sitio.
 |--------------------------------------------------------------------------
 */
 
 :root {
 
-    /*
-    |--------------------------------------------------------------------------
-    | Colores de marca — Paleta Primaria
-    |--------------------------------------------------------------------------
-    */
-
-    --color-primary: #000036;          /* Azul Cetáceo (Pantone 276 XGC) */
-    --color-primary-soft: #00006c;     /* Azul Cetáceo — variante secundaria, más saturada */
+    --color-primary: #000036;
+    --color-primary-soft: #00006c;
     --color-primary-rgb: 0, 0, 54;
 
-    --color-secondary: #ffffff;        /* Blanco */
+    --color-secondary: #ffffff;
 
     --color-text: #23232f;
     --color-text-light: #6b6b76;
 
     --color-background: #ffffff;
-    --color-background-soft: #f3f4f5; /* Blanco Anti-Flash (Pantone P106-1U) */
+    --color-background-soft: #f3f4f5;
 
-    --color-accent: #89e0d2;           /* Azul Medio Verde (Pantone P130-5C) */
-    --color-accent-dark: #1f7a6c;      /* variante oscura del acento, para texto legible sobre blanco */
-    --color-accent-light: #ccf2eb;     /* Azul Medio Verde — tinte secundario */
+    --color-accent: #89e0d2;
+    --color-accent-dark: #1f7a6c;
+    --color-accent-light: #ccf2eb;
     --color-accent-rgb: 137, 224, 210;
 
     --color-border: #e2e4e8;
-
-    /*
-    |--------------------------------------------------------------------------
-    | Gradientes
-    |--------------------------------------------------------------------------
-    */
 
     --gradient-dark:
         linear-gradient(160deg, #00001c 0%, #000036 55%, #00006c 100%);
@@ -52,58 +39,24 @@
     --gradient-fade-up:
         linear-gradient(to top, rgba(0,0,32,.92) 0%, rgba(0,0,32,.35) 55%, transparent 100%);
 
-    /*
-    |--------------------------------------------------------------------------
-    | Tipografía — según Manual de Marca
-    |--------------------------------------------------------------------------
-    */
-
-    --font-primary:
-        "Oxanium",
-        sans-serif;
-
-    --font-heading:
-        "Quantify",
-        sans-serif;
-
-    /*
-    |--------------------------------------------------------------------------
-    | Tamaños
-    |--------------------------------------------------------------------------
-    */
+    /* La cabecera utiliza Oswald; el texto general utiliza Manrope. */
+    --font-primary: "Manrope", sans-serif;
+    --font-heading: "Oswald", sans-serif;
 
     --container-width: 1280px;
-
     --section-spacing: 120px;
 
     --border-radius: 30px;
-
     --radius-sm: 10px;
     --radius-md: 18px;
     --radius-lg: 26px;
     --radius-xl: 34px;
 
-    /*
-    |--------------------------------------------------------------------------
-    | Espaciados
-    |--------------------------------------------------------------------------
-    */
-
     --spacing-xs: .5rem;
-
     --spacing-sm: 1rem;
-
     --spacing-md: 2rem;
-
     --spacing-lg: 4rem;
-
     --spacing-xl: 8rem;
-
-    /*
-    |--------------------------------------------------------------------------
-    | SPACING SCALE
-    |--------------------------------------------------------------------------
-    */
 
     --space-1: .5rem;
     --space-2: .75rem;
@@ -113,12 +66,6 @@
     --space-6: 3rem;
     --space-7: 4rem;
     --space-8: 6rem;
-
-    /*
-    |--------------------------------------------------------------------------
-    | Sombras
-    |--------------------------------------------------------------------------
-    */
 
     --shadow-xs:
         0 2px 8px rgba(0,0,54,.06);
@@ -142,18 +89,8 @@
     --shadow-inset-light:
         inset 0 1px 0 rgba(255,255,255,.06);
 
-    /*
-    |--------------------------------------------------------------------------
-    | Transiciones
-    |--------------------------------------------------------------------------
-    */
-
-    --transition:
-        all .35s ease;
-
+    --transition: all .35s ease;
     --ease-premium: cubic-bezier(.16,1,.3,1);
-
-    --transition-smooth:
-        all .6s var(--ease-premium);
+    --transition-smooth: all .6s var(--ease-premium);
 
 }
