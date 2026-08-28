@@ -16,10 +16,11 @@
 
 }
 
+/* El navbar completo queda sobre el overlay para conservar los clics. */
 .navbar{
 
     position:relative;
-    z-index:1100;
+    z-index:1102;
     transition:var(--transition-smooth);
 
 }
@@ -89,12 +90,14 @@
 .navbar__link{
 
     position:relative;
+    display:block;
     text-decoration:none;
     color:rgba(255,255,255,.9);
     font-size:.95rem;
     font-weight:500;
     letter-spacing:.3px;
     transition:.3s;
+    touch-action:manipulation;
 
 }
 
@@ -161,7 +164,7 @@
 
     display:none;
     position:relative;
-    z-index:1103;
+    z-index:1104;
     width:40px;
     height:40px;
     flex-direction:column;
@@ -209,7 +212,7 @@
 
 @media (max-width:992px){
 
-    /* El menú móvil no depende del estado visual del scroll. */
+    /* En móvil se evita el filtro del navbar para mantener el panel nítido. */
     .navbar.scrolled{
 
         background:var(--color-primary);
@@ -234,10 +237,10 @@
         background:var(--color-primary);
         box-shadow:-20px 0 60px rgba(0,0,0,.28);
         transform:translate3d(100%,0,0);
-        opacity:1;
+        visibility:hidden;
         pointer-events:none;
-        transition:transform .45s var(--ease-premium);
-        z-index:1102;
+        transition:transform .45s var(--ease-premium), visibility 0s linear .45s;
+        z-index:1103;
         overflow-y:auto;
         overflow-x:hidden;
         overscroll-behavior:contain;
@@ -246,25 +249,23 @@
 
     }
 
-    /* Mantiene el panel visible mientras el documento está bloqueado. */
-    .navbar__menu.is-open,
-    body.no-scroll .navbar__menu{
+    .navbar__menu.is-open{
 
         transform:translate3d(0,0,0);
+        visibility:visible;
         pointer-events:auto;
+        transition:transform .45s var(--ease-premium), visibility 0s linear 0s;
 
     }
 
     .navbar__link{
 
-        display:block;
         width:100%;
         color:#fff !important;
         font-size:1.3rem;
         line-height:1.2;
-        padding:.35rem 0;
+        padding:.4rem 0;
         -webkit-tap-highlight-color:transparent;
-        touch-action:manipulation;
 
     }
 
@@ -286,6 +287,7 @@
 
     }
 
+    /* El overlay queda por debajo del navbar para no interceptar sus enlaces. */
     .navbar__overlay{
 
         position:fixed;
@@ -300,12 +302,12 @@
 
     }
 
-    .navbar__overlay.is-open,
-    body.no-scroll .navbar__overlay{
+    .navbar__overlay.is-open{
 
         opacity:1;
         visibility:visible;
         pointer-events:auto;
+        transition:opacity .3s ease, visibility 0s linear 0s;
 
     }
 
