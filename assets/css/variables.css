@@ -2,44 +2,44 @@
 |--------------------------------------------------------------------------
 | VARIABLES GLOBALES
 |--------------------------------------------------------------------------
-| Paleta y tipografía principales utilizadas por todo el sitio.
+| Paleta, tipografía, espaciado y efectos compartidos por todo el sitio.
 |--------------------------------------------------------------------------
 */
 
 :root {
 
-    --color-primary: #000036;
-    --color-primary-soft: #00006c;
-    --color-primary-rgb: 0, 0, 54;
+    --color-primary: #111827;
+    --color-primary-soft: #25334d;
+    --color-primary-rgb: 17, 24, 39;
 
     --color-secondary: #ffffff;
 
-    --color-text: #23232f;
-    --color-text-light: #6b6b76;
+    --color-text: #232730;
+    --color-text-light: #6b707a;
 
     --color-background: #ffffff;
     --color-background-soft: #f3f4f5;
 
-    --color-accent: #89e0d2;
-    --color-accent-dark: #1f7a6c;
-    --color-accent-light: #ccf2eb;
-    --color-accent-rgb: 137, 224, 210;
+    --color-accent: #43d8ca;
+    --color-accent-dark: #178f84;
+    --color-accent-light: #d8f7f2;
+    --color-accent-rgb: 67, 216, 202;
 
-    --color-border: #e2e4e8;
+    --color-border: #e1e4e8;
 
+    /* Azul anterior reemplazado por un azul grisáceo más sobrio. */
     --gradient-dark:
-        linear-gradient(160deg, #00001c 0%, #000036 55%, #00006c 100%);
+        linear-gradient(160deg, #0c111b 0%, #151d2a 55%, #243047 100%);
 
     --gradient-accent:
         linear-gradient(120deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
 
     --gradient-overlay:
-        linear-gradient(180deg, rgba(0,0,54,.15) 0%, rgba(0,0,54,.55) 65%, rgba(0,0,20,.88) 100%);
+        linear-gradient(180deg, rgba(17,24,39,.16) 0%, rgba(17,24,39,.58) 65%, rgba(8,11,17,.9) 100%);
 
     --gradient-fade-up:
-        linear-gradient(to top, rgba(0,0,32,.92) 0%, rgba(0,0,32,.35) 55%, transparent 100%);
+        linear-gradient(to top, rgba(15,21,32,.94) 0%, rgba(15,21,32,.4) 55%, transparent 100%);
 
-    /* La cabecera utiliza Oswald; el texto general utiliza Manrope. */
     --font-primary: "Manrope", sans-serif;
     --font-heading: "Oswald", sans-serif;
 
@@ -68,19 +68,19 @@
     --space-8: 6rem;
 
     --shadow-xs:
-        0 2px 8px rgba(0,0,54,.06);
+        0 2px 8px rgba(var(--color-primary-rgb),.06);
 
     --shadow-soft:
-        0 10px 30px rgba(0,0,54,.08);
+        0 10px 30px rgba(var(--color-primary-rgb),.08);
 
     --shadow-md:
-        0 15px 40px rgba(0,0,54,.10);
+        0 15px 40px rgba(var(--color-primary-rgb),.1);
 
     --shadow-lg:
-        0 25px 60px rgba(0,0,54,.14);
+        0 25px 60px rgba(var(--color-primary-rgb),.14);
 
     --shadow-xl:
-        0 40px 90px rgba(0,0,54,.22);
+        0 40px 90px rgba(var(--color-primary-rgb),.2);
 
     --shadow-glow:
         0 0 0 1px rgba(var(--color-accent-rgb),.35),
