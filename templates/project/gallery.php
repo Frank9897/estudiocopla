@@ -4,21 +4,30 @@
 
         <div class="section-header" data-reveal="fade">
 
-            <span class="section-header__subtitle">
+            <span class="section-subtitle">
                 GALERÍA
             </span>
 
-            <h2 class="section-header__title">
+            <h2 class="section-title">
                 Imágenes del proyecto
             </h2>
 
         </div>
 
+        <?php
+        // La portada también forma parte de la galería para mostrar todo el material disponible.
+        $galleryImages = array_merge([$project['hero']], $project['gallery']);
+        ?>
+
         <div class="project-gallery__grid">
 
-            <?php $projectFolder = dirname($project['hero']); ?>
+            <?php foreach ($galleryImages as $i => $image): ?>
 
-            <?php foreach ($project['gallery'] as $i => $image): ?>
+                <?php
+                $imagePath = str_contains($image, '/')
+                    ? $image
+                    : dirname($project['hero']) . '/' . ltrim($image, '/');
+                ?>
 
                 <figure
                     class="project-gallery__item"
@@ -27,7 +36,7 @@
                     data-reveal-delay="<?= ($i % 4) + 1 ?>">
 
                     <img
-                        src="<?= BASE_URL ?>/assets/img/projects/<?= htmlspecialchars($projectFolder . '/' . ltrim($image, '/')) ?>"
+                        src="<?= BASE_URL ?>/assets/img/projects/<?= htmlspecialchars($imagePath) ?>"
                         alt="<?= htmlspecialchars($project['title']) ?>"
                         data-fallback
                         loading="lazy"
