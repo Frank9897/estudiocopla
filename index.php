@@ -34,7 +34,6 @@ require_once __DIR__ . '/bootstrap.php';
         <?php require_once 'sections/projects.php'; ?>
         <?php require_once 'sections/methodology.php'; ?>
         <?php require_once 'sections/construction.php'; ?>
-        <?php require_once 'sections/closing.php'; ?>
         <?php require_once 'sections/contact.php'; ?>
 
     </main>
