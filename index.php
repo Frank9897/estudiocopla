@@ -29,7 +29,6 @@ require_once __DIR__ . '/bootstrap.php';
 
         <?php require_once 'sections/hero.php'; ?>
         <?php require_once 'sections/about.php'; ?>
-        <?php require_once 'sections/experience.php'; ?>
         <?php require_once 'sections/services.php'; ?>
         <?php require_once 'sections/differential.php'; ?>
         <?php require_once 'sections/projects.php'; ?>
