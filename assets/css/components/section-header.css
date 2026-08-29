@@ -2,12 +2,13 @@
 |--------------------------------------------------------------------------
 | SECTION HEADER
 |--------------------------------------------------------------------------
-| Encabezado reutilizable para mantener la misma jerarquía visual.
+| Encabezado reutilizable y adaptable de todas las secciones.
 |--------------------------------------------------------------------------
 */
 
 .section-header{
 
+    width:100%;
     max-width:720px;
     margin:0 auto 4rem;
     text-align:center;
@@ -43,5 +44,46 @@
 
     color:var(--color-text-light);
     line-height:1.8;
+
+}
+
+@media (max-width:767px){
+
+    .section-header{
+
+        margin-bottom:3rem;
+
+    }
+
+    .section-header--left{
+
+        margin-bottom:2.5rem;
+        text-align:left;
+
+    }
+
+    .section-subtitle{
+
+        margin-bottom:.75rem;
+        font-size:.72rem;
+        letter-spacing:.22rem;
+
+    }
+
+    .section-title{
+
+        margin-bottom:1.1rem;
+        font-size:clamp(2rem,9vw,3rem);
+        line-height:1.08;
+        text-wrap:balance;
+
+    }
+
+    .section-description{
+
+        font-size:.96rem;
+        line-height:1.75;
+
+    }
 
 }
