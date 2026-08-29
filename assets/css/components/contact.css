@@ -2,8 +2,7 @@
 |--------------------------------------------------------------------------
 | CONTACT COMPONENT
 |--------------------------------------------------------------------------
-| Mantiene la jerarquía visual general y un formulario simple para
-| iniciar consultas directamente por WhatsApp.
+| Contacto principal, acceso directo a WhatsApp y código QR.
 |--------------------------------------------------------------------------
 */
 
@@ -128,6 +127,106 @@
 
 }
 
+/* Acceso alternativo a WhatsApp mediante botón y QR. */
+.contact__direct{
+
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:3rem;
+    align-items:center;
+    margin-top:4rem;
+    padding:2.5rem 3rem;
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-lg);
+    background:var(--color-background-soft);
+    box-shadow:var(--shadow-soft);
+
+}
+
+.contact__direct-copy{
+
+    max-width:720px;
+
+}
+
+.contact__direct-label,
+.contact__qr-label{
+
+    display:block;
+    margin-bottom:.7rem;
+    color:var(--color-accent-dark);
+    font-size:.78rem;
+    font-weight:600;
+    letter-spacing:.18rem;
+    text-transform:uppercase;
+
+}
+
+.contact__direct-title{
+
+    margin:0 0 .9rem;
+    font-family:var(--font-heading);
+    font-size:clamp(1.65rem,3vw,2.35rem);
+    line-height:1.05;
+
+}
+
+.contact__direct-text{
+
+    max-width:620px;
+    margin:0 0 1.5rem;
+    color:var(--color-text-light);
+    line-height:1.75;
+
+}
+
+.contact__direct-button{
+
+    width:auto;
+
+}
+
+.contact__qr{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    text-align:center;
+
+}
+
+.contact__qr-label{
+
+    margin-bottom:.9rem;
+
+}
+
+.contact__qr-frame{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:176px;
+    height:176px;
+    padding:9px;
+    border:1px solid rgba(var(--color-primary-rgb),.12);
+    border-radius:18px;
+    background:#fff;
+    box-shadow:var(--shadow-md);
+
+}
+
+.contact__qr-frame img{
+
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+
+}
+
 .contact__map{
 
     margin-top:5rem;
@@ -167,6 +266,14 @@
 
     }
 
+    .contact__direct{
+
+        grid-template-columns:1fr auto;
+        gap:2rem;
+        padding:2.25rem;
+
+    }
+
     .contact__map iframe{
 
         height:350px;
@@ -181,6 +288,44 @@
 
         padding:2rem;
         border-radius:60px 18px 18px 18px;
+
+    }
+
+    .contact__direct{
+
+        grid-template-columns:1fr;
+        gap:2rem;
+        padding:2rem;
+        text-align:left;
+
+    }
+
+    .contact__direct-button{
+
+        width:100%;
+
+    }
+
+    .contact__qr{
+
+        justify-self:center;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .contact__direct{
+
+        padding:1.5rem;
+
+    }
+
+    .contact__qr-frame{
+
+        width:164px;
+        height:164px;
 
     }
 
