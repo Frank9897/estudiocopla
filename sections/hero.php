@@ -1,5 +1,11 @@
 <section id="inicio" class="hero section-lg">
 
+    <div
+        class="hero__media"
+        aria-hidden="true"
+        style="background-image:url('<?= BASE_URL ?>/assets/img/hero.webp');">
+    </div>
+
     <div class="hero__overlay"></div>
 
     <div class="container">
