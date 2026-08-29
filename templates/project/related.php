@@ -17,11 +17,11 @@ $related = array_slice(array_values($related), 0, 3);
 
         <div class="section-header" data-reveal="fade">
 
-            <span class="section-header__subtitle">
+            <span class="section-subtitle">
                 CONTINUÁ EXPLORANDO
             </span>
 
-            <h2 class="section-header__title">
+            <h2 class="section-title">
                 Descubrí más obras del estudio
             </h2>
 
@@ -42,7 +42,9 @@ $related = array_slice(array_values($related), 0, 3);
                         class="project-card__image"
                         src="<?= BASE_URL ?>/assets/img/projects/<?= htmlspecialchars($item['hero']) ?>"
                         alt="<?= htmlspecialchars($item['title']) ?>"
-                        data-fallback>
+                        data-fallback
+                        loading="lazy"
+                        decoding="async">
 
                     <div class="project-card__overlay">
 
@@ -75,9 +77,7 @@ $related = array_slice(array_values($related), 0, 3);
             <a
                 href="<?= BASE_URL ?>/#proyectos"
                 class="button button--primary">
-
                 Ver todos los proyectos
-
             </a>
 
         </div>
