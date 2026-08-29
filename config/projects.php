@@ -7,23 +7,11 @@ return [
         'slug' => 'casa-serena',
         'title' => 'Casa Serena',
         'category' => 'Residencial',
-        'hero' => 'casa-serena/cover.webp',
-
+        'hero' => 'casa-serena/01.webp',
         'headline' => 'Luz, naturaleza y calidez se integran para crear una experiencia de habitar serena y atemporal.',
-
         'description' => 'Vivienda unifamiliar que reinterpreta la arquitectura colonial desde una mirada contemporánea. El proyecto combina líneas sobrias, materiales neutros y espacios cálidos donde la madera, la luz natural y el patio interior se convierten en protagonistas de la experiencia de habitar.',
-
-        'gallery' => [
-            '01.webp',
-            '02.webp',
-            '03.webp'
-        ],
-
-        'services' => [
-            'Proyecto Arquitectónico',
-            'Dirección Técnica',
-            'Diseño de Interiores'
-        ]
+        'gallery' => ['02.webp', '03.webp'],
+        'services' => ['Proyecto Arquitectónico', 'Dirección Técnica', 'Diseño de Interiores']
     ],
 
     [
@@ -31,22 +19,11 @@ return [
         'slug' => 'casa-terrazas',
         'title' => 'Casa Terrazas',
         'category' => 'Residencial',
-        'hero' => 'casa-terrazas/cover.webp',
-
+        'hero' => 'casa-terrazas/01.webp',
         'headline' => 'Cuando el terreno guía el diseño, la arquitectura encuentra su lugar.',
-
         'description' => 'Vivienda unifamiliar sobre un terreno con más de 15 metros de desnivel, donde la arquitectura se adapta a la topografía existente para minimizar intervenciones y potenciar las vistas hacia los cerros de Villa Jardín de Reyes. La organización escalonada de los espacios y sus tres terrazas permiten una conexión permanente con el paisaje natural.',
-
-        'gallery' => [
-            '01.webp',
-            '02.webp'
-        ],
-
-        'services' => [
-            'Proyecto Arquitectónico',
-            'Topografía',
-            'Dirección Técnica'
-        ]
+        'gallery' => ['02.webp'],
+        'services' => ['Proyecto Arquitectónico', 'Topografía', 'Dirección Técnica']
     ],
 
     [
@@ -54,23 +31,11 @@ return [
         'slug' => 'casa-rio',
         'title' => 'Casa Río',
         'category' => 'Remodelación',
-        'hero' => 'casa-rio/cover.webp',
-
+        'hero' => 'casa-rio/01.webp',
         'headline' => 'Diseñar es transformar lo existente en nuevas oportunidades de bienestar.',
-
         'description' => 'Rediseño, ampliación y refuncionalización de una vivienda IVUJ para adaptarla a una nueva forma de habitar. El proyecto integra espacios luminosos, flexibles y conectados con el paisaje, optimizando cada metro disponible para lograr una arquitectura moderna, funcional y en equilibrio con su entorno.',
-
-        'gallery' => [
-            '01.webp',
-            '02.webp',
-            '03.webp'
-        ],
-
-        'services' => [
-            'Remodelación',
-            'Proyecto Arquitectónico',
-            'Dirección Técnica'
-        ]
+        'gallery' => ['02.webp', '03.webp'],
+        'services' => ['Remodelación', 'Proyecto Arquitectónico', 'Dirección Técnica']
     ],
 
     [
@@ -78,21 +43,11 @@ return [
         'slug' => 'casa-crear',
         'title' => 'Casa Crear',
         'category' => 'Residencial',
-        'hero' => 'casa-crear/cover.webp',
-
+        'hero' => 'casa-crear/01.webp',
         'headline' => 'La luz bien planificada transforma la manera de habitar.',
-
         'description' => 'Casa Crear reinterpreta el prototipo pampeano del programa PROCREAR mediante una propuesta contemporánea que prioriza la luminosidad, la funcionalidad y el confort cotidiano. Los espacios integrados, la doble altura y la orientación estratégica permiten aprovechar al máximo la luz natural, mientras que los materiales nobles aportan calidez y equilibrio a una arquitectura de inspiración nórdica.',
-
-        'gallery' => [
-            '01.webp',
-            '02.webp'
-        ],
-
-        'services' => [
-            'Proyecto Arquitectónico',
-            'Dirección Técnica'
-        ]
+        'gallery' => ['02.webp'],
+        'services' => ['Proyecto Arquitectónico', 'Dirección Técnica']
     ],
 
     [
@@ -100,24 +55,11 @@ return [
         'slug' => 'laboratorio-anatomia-patologica',
         'title' => 'Laboratorio de Anatomía Patológica',
         'category' => 'Salud',
-        'hero' => 'laboratorio/cover.webp',
-
+        'hero' => 'laboratorio/preview.webp',
         'headline' => 'La planificación transforma las limitaciones en oportunidades de diseño.',
-
         'description' => 'Proyecto integral de un laboratorio de anatomía patológica desarrollado en una superficie de 67 m² en pleno centro urbano. Acompañamos a la propietaria desde la selección estratégica del inmueble hasta el diseño arquitectónico, interiorismo y equipamiento. La propuesta optimizó cada metro cuadrado mediante una planificación precisa que garantiza eficiencia operativa, cumplimiento normativo y una experiencia espacial cálida y contemporánea.',
-
-        'gallery' => [
-            '01.webp',
-            '02.webp',
-            '03.webp'
-        ],
-
-        'services' => [
-            'Asesoramiento en Selección de Inmueble',
-            'Proyecto Arquitectónico',
-            'Interiorismo',
-            'Equipamiento a Medida'
-        ]
+        'gallery' => ['01.webp', '03.webp'],
+        'services' => ['Asesoramiento en Selección de Inmueble', 'Proyecto Arquitectónico', 'Interiorismo', 'Equipamiento a Medida']
     ],
 
     [
@@ -125,23 +67,11 @@ return [
         'slug' => 'dr-herboso',
         'title' => 'Dr. Herboso',
         'category' => 'Salud',
-        'hero' => 'dr-herboso/cover.webp',
-
+        'hero' => 'dr-herboso/01.webp',
         'headline' => 'La funcionalidad no fue una consecuencia: fue el punto de partida de cada decisión de diseño.',
-
         'description' => 'Proyecto integral desarrollado para un centro especializado en cirugía plástica. A partir del asesoramiento en la selección del inmueble se diseñó una solución que integra sala de espera, quirófano, consultorios, sala de recuperación, área de kinesiología, esterilización, servicios y espacios de apoyo dentro de una superficie acotada. La propuesta combinó planificación funcional, diseño interior y equipamiento a medida para garantizar eficiencia operativa, confort y una experiencia espacial de alta calidad.',
-
-        'gallery' => [
-            '01.webp',
-            '02.webp'
-        ],
-
-        'services' => [
-            'Asesoramiento en Selección de Inmueble',
-            'Proyecto Arquitectónico',
-            'Interiorismo',
-            'Equipamiento a Medida'
-        ]
+        'gallery' => ['02.webp'],
+        'services' => ['Asesoramiento en Selección de Inmueble', 'Proyecto Arquitectónico', 'Interiorismo', 'Equipamiento a Medida']
     ],
 
     [
@@ -149,22 +79,11 @@ return [
         'slug' => 'nuevo-polideportivo',
         'title' => 'Nuevo Polideportivo',
         'category' => 'Institucional',
-        'hero' => 'polideportivo/cover.webp',
-
+        'hero' => 'polideportivo/preview.webp',
         'headline' => 'Un espacio para el deporte, la cultura y el encuentro de toda la comunidad.',
-
         'description' => 'Proyecto de recuperación y puesta en valor de un espacio emblemático de la ciudad de La Quiaca, concebido para fortalecer las actividades deportivas, culturales y sociales. La propuesta incorpora canchas deportivas, tribunas, vestuarios, boletería y un acceso jerarquizado, generando una infraestructura moderna destinada al encuentro y desarrollo de niños y jóvenes.',
-
-        'gallery' => [
-            '01.webp',
-            '02.webp'
-        ],
-
-        'services' => [
-            'Proyecto Arquitectónico',
-            'Dirección Técnica',
-            'Proyecto Público'
-        ]
+        'gallery' => ['01.webp', '02.webp'],
+        'services' => ['Proyecto Arquitectónico', 'Dirección Técnica', 'Proyecto Público']
     ]
 
 ];
