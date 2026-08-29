@@ -9,19 +9,12 @@
 .button{
 
     display:inline-flex;
-
     align-items:center;
-
     justify-content:center;
-
     padding:1rem 2rem;
-
     border-radius:14px;
-
     font-weight:600;
-
     transition:var(--transition);
-
     cursor:pointer;
 
 }
@@ -29,25 +22,22 @@
 .button--primary{
 
     background:var(--color-primary);
-
     color:var(--color-secondary);
+    box-shadow:0 10px 25px rgba(var(--color-primary-rgb),.12);
 
 }
 
 .button--primary:hover{
 
     background:var(--color-accent);
-
     color:var(--color-primary);
-
     transform:translateY(-3px);
 
 }
 
 .button--secondary{
 
-    border:2px solid var(--color-secondary);
-
+    border:1px solid rgba(255,255,255,.72);
     color:var(--color-secondary);
 
 }
@@ -55,9 +45,8 @@
 .button--secondary:hover{
 
     background:var(--color-accent);
-
+    border-color:var(--color-accent);
     color:var(--color-primary);
-
     transform:translateY(-3px);
 
 }
