@@ -8,8 +8,21 @@
 */
 
 define('SITE_NAME', 'Estudio COPLA');
-define('SITE_URL', 'http://localhost/estudiocopla');
-define('BASE_URL', '/estudiocopla');
+
+/* La URL base se adapta al entorno local o al dominio del hosting. */
+$isLocal = in_array($_SERVER['HTTP_HOST'] ?? '', [
+    'localhost',
+    '127.0.0.1'
+], true);
+
+define(
+    'SITE_URL',
+    $isLocal
+        ? 'http://localhost/estudiocopla'
+        : 'http://estudiocopla.atwebpages.com'
+);
+
+define('BASE_URL', $isLocal ? '/estudiocopla' : '');
 
 /* Cache-busting automático para css y js locales. */
 define('ROOT_PATH', dirname(__DIR__));
