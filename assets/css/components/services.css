@@ -4,6 +4,44 @@
 |--------------------------------------------------------------------------
 */
 
+.services__media{
+
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:1.2rem;
+    margin:0 0 4rem;
+
+}
+
+.services__image{
+
+    position:relative;
+    overflow:hidden;
+    min-width:0;
+    aspect-ratio:4/5;
+    border-radius:var(--radius-md);
+    background:var(--gradient-dark);
+    box-shadow:var(--shadow-md);
+
+}
+
+.services__image img{
+
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    transition:transform .8s var(--ease-premium);
+
+}
+
+.services__image:hover img{
+
+    transform:scale(1.05);
+
+}
+
 .services__grid{
 
     display:flex;
@@ -132,5 +170,50 @@
     background:var(--color-accent);
     color:var(--color-primary);
     transform:rotate(-8deg) scale(1.05);
+
+}
+
+@media (max-width:900px){
+
+    .services__media{
+
+        grid-template-columns:1.2fr 1fr;
+        gap:1rem;
+        margin-bottom:3rem;
+
+    }
+
+    .services__image:last-child{
+
+        grid-column:1 / -1;
+        aspect-ratio:16/8;
+
+    }
+
+}
+
+@media (max-width:560px){
+
+    .services__media{
+
+        grid-template-columns:1fr;
+        gap:.9rem;
+
+    }
+
+    .services__image,
+    .services__image:last-child{
+
+        grid-column:auto;
+        aspect-ratio:4/3;
+
+    }
+
+    .service-card{
+
+        flex-basis:100%;
+        max-width:none;
+
+    }
 
 }
