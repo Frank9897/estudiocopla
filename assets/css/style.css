@@ -9,24 +9,25 @@
 
 /* Versionado común de imports para evitar estilos antiguos en caché. */
 
-@import url("base/typography.css?v=15");
+@import url("base/typography.css?v=16");
 
-@import url("layout/container.css?v=15");
-@import url("layout/section.css?v=15");
+@import url("layout/container.css?v=16");
+@import url("layout/section.css?v=16");
 
-@import url("components/section-header.css?v=15");
-@import url("components/button.css?v=15");
-@import url("components/navbar.css?v=15");
-@import url("components/hero.css?v=15");
-@import url("components/about.css?v=15");
-@import url("components/services.css?v=15");
-@import url("components/differential.css?v=15");
-@import url("components/projects.css?v=15");
-@import url("components/methodology.css?v=15");
-@import url("components/construction.css?v=15");
-@import url("components/contact.css?v=15");
-@import url("components/map.css?v=15");
-@import url("components/footer.css?v=15");
+@import url("components/section-header.css?v=16");
+@import url("components/button.css?v=16");
+@import url("components/navbar.css?v=16");
+@import url("components/hero.css?v=16");
+@import url("components/about.css?v=16");
+@import url("components/services.css?v=16");
+@import url("components/differential.css?v=16");
+@import url("components/projects.css?v=16");
+@import url("components/methodology.css?v=16");
+@import url("components/construction.css?v=16");
+@import url("components/contact.css?v=16");
+@import url("components/map.css?v=16");
+@import url("components/footer.css?v=16");
+@import url("components/lightbox.css?v=16");
 
 html{
 
@@ -41,8 +42,9 @@ body{
 
 }
 
-/* Bloquea el desplazamiento cuando el menú móvil está abierto. */
-body.no-scroll{
+/* Bloquea el desplazamiento cuando el menú móvil o la galería están abiertos. */
+body.no-scroll,
+body.lightbox-open{
 
     overflow:hidden;
 
