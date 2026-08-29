@@ -94,7 +94,60 @@
 
         </div>
 
-        <!-- El mapa se mantiene centrado en San Salvador de Jujuy hasta contar con la dirección exacta. -->
+        <!-- Contacto alternativo: acceso directo a WhatsApp y código QR. -->
+        <div class="contact__direct" data-reveal="fade">
+
+            <div class="contact__direct-copy">
+
+                <span class="contact__direct-label">
+                    CONTACTO DIRECTO
+                </span>
+
+                <h3 class="contact__direct-title">
+                    O comunicate directamente con nosotros.
+                </h3>
+
+                <p class="contact__direct-text">
+                    Podés escribirnos por WhatsApp o escanear el código QR para iniciar la conversación desde tu teléfono.
+                </p>
+
+                <a
+                    href="https://wa.me/<?= SITE_WHATSAPP ?>"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button--primary contact__direct-button">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Hablar por WhatsApp
+
+                </a>
+
+            </div>
+
+            <div class="contact__qr" aria-label="Código QR para contactar por WhatsApp">
+
+                <span class="contact__qr-label">
+                    ESCANEÁ EL QR
+                </span>
+
+                <div class="contact__qr-frame">
+
+                    <img
+                        src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&margin=10&data=<?= urlencode('https://wa.me/' . SITE_WHATSAPP) ?>"
+                        alt="Código QR para iniciar una conversación por WhatsApp"
+                        width="220"
+                        height="220"
+                        loading="lazy"
+                        decoding="async">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- El mapa se mantiene centrado en San Salvador de Jujuy. -->
         <div class="contact__map" data-reveal="fade">
 
             <iframe
