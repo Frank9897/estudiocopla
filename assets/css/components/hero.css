@@ -2,12 +2,14 @@
 |--------------------------------------------------------------------------
 | HERO COMPONENT
 |--------------------------------------------------------------------------
+| Presentación principal adaptable a desktop, tablet y móvil.
+|--------------------------------------------------------------------------
 */
 
 .hero{
 
     position:relative;
-    min-height:100vh;
+    min-height:100svh;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -31,8 +33,7 @@
 
 }
 
-/* Marco decorativo tipo plano arquitectónico */
-
+/* Marco decorativo tipo plano arquitectónico. */
 .hero::before{
 
     content:"";
@@ -66,12 +67,13 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
+    min-height:100svh;
 
 }
 
 .hero__content{
 
+    width:100%;
     max-width:850px;
     text-align:center;
     animation:heroFade 1.1s var(--ease-premium);
@@ -83,6 +85,7 @@
     position:relative;
     display:inline-flex;
     align-items:center;
+    justify-content:center;
     gap:.9rem;
     margin-bottom:var(--space-4);
     letter-spacing:5px;
@@ -105,10 +108,10 @@
 
 .hero__title{
 
-    color:#ffffff;
+    margin-bottom:var(--space-5);
+    color:#fff;
     font-size:clamp(3rem,6vw,5.8rem);
     line-height:1.05;
-    margin-bottom:var(--space-5);
     text-shadow:0 20px 45px rgba(0,0,0,.55);
 
 }
@@ -134,8 +137,7 @@
 
 }
 
-/* Indicador de scroll */
-
+/* Indicador de scroll. */
 .hero__scroll-indicator{
 
     position:absolute;
@@ -175,5 +177,127 @@
     height:10px;
     background:var(--color-accent);
     animation:scrollDot 1.8s ease-in-out infinite;
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+
+        min-height:100svh;
+        padding:7rem 0 4rem;
+
+    }
+
+    .hero .container{
+
+        min-height:calc(100svh - 3rem);
+
+    }
+
+    .hero::before{
+
+        inset:16px;
+
+    }
+
+    .hero::after{
+
+        left:16px;
+        top:16px;
+        width:52px;
+        height:52px;
+
+    }
+
+    .hero__content{
+
+        padding:1rem 0 2rem;
+
+    }
+
+    .hero__subtitle{
+
+        max-width:100%;
+        gap:.55rem;
+        letter-spacing:.28rem;
+        font-size:.68rem;
+        line-height:1.8;
+    }
+
+    .hero__subtitle::before,
+    .hero__subtitle::after{
+
+        width:20px;
+
+    }
+
+    .hero__title{
+
+        margin-bottom:1.35rem;
+        font-size:clamp(2.25rem,10.8vw,3.7rem);
+        line-height:1.03;
+        text-wrap:balance;
+
+    }
+
+    .hero__text{
+
+        max-width:34rem;
+        font-size:.98rem;
+        line-height:1.75;
+
+    }
+
+    .hero__actions{
+
+        width:100%;
+        gap:.85rem;
+        margin-top:2rem;
+
+    }
+
+    .hero__actions .button{
+
+        width:100%;
+        max-width:22rem;
+
+    }
+
+    .hero__scroll-indicator{
+
+        display:none;
+
+    }
+
+}
+
+@media (max-width:420px){
+
+    .hero{
+
+        padding:6.5rem 0 3rem;
+
+    }
+
+    .hero__title{
+
+        font-size:clamp(2.15rem,10.5vw,3.2rem);
+
+    }
+
+    .hero__text{
+
+        font-size:.92rem;
+
+        line-height:1.7;
+
+    }
+
+    .hero__actions .button{
+
+        max-width:none;
+
+    }
 
 }
