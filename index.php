@@ -2,15 +2,9 @@
 require_once __DIR__ . '/bootstrap.php';
 /*
 |--------------------------------------------------------------------------
-| Estudio COPLA
+| ESTUDIO COPLA
 |--------------------------------------------------------------------------
-| Landing Page oficial del Estudio COPLA.
-| Este archivo actúa como punto de entrada del sitio y se encarga
-| de cargar de forma ordenada cada componente reutilizable.
-|
-| Autor: Franco Vasquez
-| Proyecto: Landing Page Estudio COPLA
-| Versión: 0.1.0
+| Entrada principal de la landing y carga ordenada de sus secciones.
 |--------------------------------------------------------------------------
 */
 ?>
@@ -34,26 +28,21 @@ require_once __DIR__ . '/bootstrap.php';
     <main>
 
         <?php require_once 'sections/hero.php'; ?>
-
         <?php require_once 'sections/about.php'; ?>
-
+        <?php require_once 'sections/experience.php'; ?>
         <?php require_once 'sections/services.php'; ?>
-
+        <?php require_once 'sections/differential.php'; ?>
         <?php require_once 'sections/projects.php'; ?>
-
         <?php require_once 'sections/methodology.php'; ?>
-
         <?php require_once 'sections/construction.php'; ?>
-
+        <?php require_once 'sections/closing.php'; ?>
         <?php require_once 'sections/contact.php'; ?>
-
 
     </main>
 
     <?php require_once 'includes/footer.php'; ?>
-
     <?php require_once 'includes/scripts.php'; ?>
-    
+
 </body>
 
 </html>
