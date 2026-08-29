@@ -13,9 +13,7 @@
             </h2>
 
             <p class="section-description">
-
                 En COPLA integramos Arquitectura, Planificación y Confort para crear espacios funcionales, eficientes y atemporales. Acompañamos a nuestros clientes desde la primera idea hasta la entrega final de la obra, cuidando cada detalle del proceso.
-
             </p>
 
         </div>
@@ -25,7 +23,7 @@
             <div class="about__image" data-media>
 
                 <img
-                    src="<?= BASE_URL ?>/assets/img/about.jpg"
+                    src="<?= BASE_URL ?>/assets/img/about.webp"
                     alt="Proyecto arquitectónico de COPLA"
                     data-fallback>
 
