@@ -9,23 +9,26 @@
 
 /* Versionado común de imports para evitar estilos antiguos en caché. */
 
-@import url("base/typography.css?v=11");
+@import url("base/typography.css?v=12");
 
-@import url("layout/container.css?v=11");
-@import url("layout/section.css?v=11");
+@import url("layout/container.css?v=12");
+@import url("layout/section.css?v=12");
 
-@import url("components/section-header.css?v=11");
-@import url("components/button.css?v=11");
-@import url("components/navbar.css?v=11");
-@import url("components/hero.css?v=11");
-@import url("components/about.css?v=11");
-@import url("components/services.css?v=11");
-@import url("components/projects.css?v=11");
-@import url("components/methodology.css?v=11");
-@import url("components/construction.css?v=11");
-@import url("components/contact.css?v=11");
-@import url("components/map.css?v=11");
-@import url("components/footer.css?v=11");
+@import url("components/section-header.css?v=12");
+@import url("components/button.css?v=12");
+@import url("components/navbar.css?v=12");
+@import url("components/hero.css?v=12");
+@import url("components/about.css?v=12");
+@import url("components/experience.css?v=12");
+@import url("components/services.css?v=12");
+@import url("components/differential.css?v=12");
+@import url("components/projects.css?v=12");
+@import url("components/methodology.css?v=12");
+@import url("components/construction.css?v=12");
+@import url("components/closing.css?v=12");
+@import url("components/contact.css?v=12");
+@import url("components/map.css?v=12");
+@import url("components/footer.css?v=12");
 
 html{
 
