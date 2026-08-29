@@ -2,6 +2,8 @@
 |--------------------------------------------------------------------------
 | PROJECTS COMPONENT
 |--------------------------------------------------------------------------
+| Tarjetas de proyectos adaptables a escritorio, tablet y móvil.
+|--------------------------------------------------------------------------
 */
 
 .projects{
@@ -48,7 +50,7 @@
 .projects__grid{
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:2rem;
     margin-top:5rem;
 
@@ -82,6 +84,13 @@
     object-fit:cover;
     filter:grayscale(.35) brightness(.92);
     transition:transform .8s var(--ease-premium), filter .6s ease;
+
+}
+
+/* Evita que el texto alternativo invada el placeholder si una imagen falla. */
+.project-card__image[data-fallback]{
+
+    font-size:0;
 
 }
 
@@ -197,5 +206,63 @@
 
     transform:translateX(6px) rotate(-45deg);
     background:#ffffff;
+
+}
+
+/* En dispositivos táctiles no existe hover: mostramos el contenido de forma estable. */
+@media (hover:none), (pointer:coarse){
+
+    .project-card__overlay{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+    .project-card__image{
+
+        filter:grayscale(0) brightness(.9);
+
+    }
+
+}
+
+@media (max-width:767px){
+
+    .projects__grid{
+
+        grid-template-columns:1fr;
+        gap:1.5rem;
+        margin-top:3rem;
+
+    }
+
+    .project-card{
+
+        aspect-ratio:4/3;
+        min-height:0;
+        border-radius:20px;
+
+    }
+
+    .project-card__overlay{
+
+        padding:1.4rem;
+
+    }
+
+    .project-card__title{
+
+        font-size:1.65rem;
+
+    }
+
+    .project-card__arrow{
+
+        width:40px;
+        height:40px;
+        font-size:1.1rem;
+
+    }
 
 }
