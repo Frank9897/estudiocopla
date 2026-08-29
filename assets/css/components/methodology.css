@@ -2,7 +2,7 @@
 |--------------------------------------------------------------------------
 | METHODOLOGY COMPONENT
 |--------------------------------------------------------------------------
-| Analiza el terreno y el contexto antes de definir la propuesta.
+| Diferencial del estudio: analiza el terreno y contexto antes de diseñar.
 |--------------------------------------------------------------------------
 */
 
@@ -10,8 +10,8 @@
 
     position:relative;
     background-image:
-        linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.18)),
-        url("../img/methodology/background.webp");
+        linear-gradient(rgba(7,12,20,.48), rgba(7,12,20,.48)),
+        url("../../img/methodology/background.webp");
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
@@ -25,7 +25,7 @@
     content:"";
     position:absolute;
     inset:0;
-    background:radial-gradient(circle at 50% 0, rgba(var(--color-accent-rgb),.16), transparent 55%);
+    background:linear-gradient(180deg, rgba(17,24,39,.08), rgba(17,24,39,.34));
     pointer-events:none;
 
 }
@@ -68,7 +68,7 @@
 
 .methodology__text{
 
-    color:rgba(255,255,255,.78);
+    color:rgba(255,255,255,.84);
     line-height:1.8;
 
 }
@@ -85,11 +85,11 @@
 
     position:relative;
     padding:2.2rem 1.5rem;
-    border:1px solid rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.18);
     border-radius:var(--radius-md);
-    background:rgba(0,0,0,.22);
+    background:rgba(17,24,39,.46);
     text-align:center;
-    backdrop-filter:blur(6px);
+    backdrop-filter:blur(4px);
     transition:transform .5s var(--ease-premium), background .5s, box-shadow .5s;
 
 }
@@ -108,7 +108,7 @@
     font-family:var(--font-heading);
     font-size:1.15rem;
     font-weight:600;
-    box-shadow:0 12px 28px rgba(var(--color-accent-rgb),.35);
+    box-shadow:0 12px 28px rgba(var(--color-accent-rgb),.28);
 
 }
 
@@ -122,7 +122,7 @@
 
 .step-card p{
 
-    color:rgba(255,255,255,.7);
+    color:rgba(255,255,255,.74);
     line-height:1.7;
     font-size:.94rem;
 
@@ -131,7 +131,7 @@
 .step-card:hover{
 
     transform:translateY(-8px);
-    background:rgba(0,0,0,.3);
+    background:rgba(17,24,39,.62);
     box-shadow:var(--shadow-xl);
 
 }
@@ -146,7 +146,7 @@
 
 .methodology__closing p{
 
-    color:rgba(255,255,255,.68);
+    color:rgba(255,255,255,.76);
     line-height:1.8;
     margin-bottom:1.5rem;
 
@@ -172,6 +172,10 @@
 }
 
 @media (max-width:720px){
+
+    .methodology__header{
+        margin-bottom:3rem;
+    }
 
     .methodology__grid{
         grid-template-columns:1fr;
