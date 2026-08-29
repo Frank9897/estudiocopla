@@ -2,7 +2,7 @@
 |--------------------------------------------------------------------------
 | PROJECTS COMPONENT
 |--------------------------------------------------------------------------
-| Tarjetas de proyectos adaptables a escritorio, tablet y móvil.
+| Tarjetas de proyectos adaptables y centradas en filas incompletas.
 |--------------------------------------------------------------------------
 */
 
@@ -47,10 +47,13 @@
 
 }
 
+/* Flex permite centrar automáticamente las filas incompletas. */
 .projects__grid{
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:stretch;
     gap:2rem;
     margin-top:5rem;
 
@@ -60,6 +63,9 @@
 
     position:relative;
     display:block;
+    flex:0 1 280px;
+    width:280px;
+    max-width:100%;
     aspect-ratio:4/5;
     overflow:hidden;
     border-radius:var(--radius-lg);
@@ -82,12 +88,11 @@
     width:100%;
     height:100%;
     object-fit:cover;
-    filter:grayscale(.35) brightness(.92);
+    filter:grayscale(.3) brightness(.94);
     transition:transform .8s var(--ease-premium), filter .6s ease;
 
 }
 
-/* Evita que el texto alternativo invada el placeholder si una imagen falla. */
 .project-card__image[data-fallback]{
 
     font-size:0;
@@ -115,7 +120,7 @@
     content:"";
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.18);
+    background:rgba(0,0,0,.16);
     transition:.4s;
     z-index:1;
 
@@ -144,7 +149,7 @@
     text-transform:uppercase;
     letter-spacing:.25rem;
     color:var(--color-accent-light);
-    opacity:.9;
+    opacity:.95;
 
 }
 
@@ -184,7 +189,7 @@
 
 .project-card:hover::before{
 
-    background:rgba(0,0,0,.05);
+    background:rgba(0,0,0,.04);
 
 }
 
@@ -209,7 +214,7 @@
 
 }
 
-/* En dispositivos táctiles no existe hover: mostramos el contenido de forma estable. */
+/* En táctil el contenido queda visible porque no existe hover real. */
 @media (hover:none), (pointer:coarse){
 
     .project-card__overlay{
@@ -227,11 +232,21 @@
 
 }
 
+@media (max-width:1100px){
+
+    .project-card{
+
+        flex-basis:260px;
+        width:260px;
+
+    }
+
+}
+
 @media (max-width:767px){
 
     .projects__grid{
 
-        grid-template-columns:1fr;
         gap:1.5rem;
         margin-top:3rem;
 
@@ -239,8 +254,9 @@
 
     .project-card{
 
+        flex-basis:min(100%,420px);
+        width:min(100%,420px);
         aspect-ratio:4/3;
-        min-height:0;
         border-radius:20px;
 
     }
