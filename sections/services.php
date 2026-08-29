@@ -20,6 +20,26 @@
 
             </div>
 
+            <!-- Imágenes de apoyo según la presentación institucional. -->
+            <div class="services__media" data-reveal="fade">
+
+                <?php for ($i = 1; $i <= 3; $i++): ?>
+
+                    <figure class="services__image" data-media>
+
+                        <img
+                            src="<?= BASE_URL ?>/assets/img/services/0<?= $i ?>.webp"
+                            alt="Arquitectura y servicios de Estudio COPLA"
+                            loading="lazy"
+                            decoding="async"
+                            data-fallback>
+
+                    </figure>
+
+                <?php endfor; ?>
+
+            </div>
+
             <div class="services__grid">
 
                 <article class="service-card" data-reveal="scale" data-reveal-delay="1">
